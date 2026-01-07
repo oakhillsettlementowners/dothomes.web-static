@@ -26,7 +26,6 @@
     "tsx": "^4.21.0"
   },
   "devDependencies": {
-    "@limlabs/witness": "git+https://codeberg.org/limlabs/witness.git",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
