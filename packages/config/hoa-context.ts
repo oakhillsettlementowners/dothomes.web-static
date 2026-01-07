@@ -118,8 +118,8 @@ export const hoaContext = {
   community: {
     name: "Oak Hill Settlement",
     location: "Forest Grove, Oregon",
-    residents: 1344,
-    homeowners: "95%",
+    lots: 194,
+    nextdoorMembers: 1344,
     description: "A peaceful, family-friendly neighborhood known for its lush greenery and quiet streets",
   },
 };

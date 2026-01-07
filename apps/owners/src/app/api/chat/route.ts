@@ -1,10 +1,24 @@
 import { NextRequest, NextResponse } from "next/server";
 import OpenAI from "openai";
+import { Pinecone } from "@pinecone-database/pinecone";
 
 // Initialize OpenAI client
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
+
+// Initialize Pinecone client (lazy initialization)
+let pineconeIndex: ReturnType<Pinecone["index"]> | null = null;
+
+function getPineconeIndex() {
+  if (!pineconeIndex && process.env.PINECONE_API_KEY && process.env.PINECONE_INDEX_NAME) {
+    const pinecone = new Pinecone({
+      apiKey: process.env.PINECONE_API_KEY,
+    });
+    pineconeIndex = pinecone.index(process.env.PINECONE_INDEX_NAME);
+  }
+  return pineconeIndex;
+}
 
 // System prompt with context about HOA and Oregon law
 const SYSTEM_PROMPT = `You are a community AI assistant for Oak Hill Settlement homeowners in Forest Grove, Oregon. This is an INDEPENDENT, community-driven tool NOT affiliated with the HOA Board of Directors or property management company.
@@ -134,6 +148,63 @@ IMPORTANT DISCLAIMERS:
 
 Tone: Supportive, empowering, informative, and focused on homeowner rights. Help homeowners navigate Oak Hill Settlement's specific governance structure while understanding their rights under Oregon law.`;
 
+/**
+ * Retrieve relevant document chunks from Pinecone using semantic search
+ */
+async function retrieveRelevantContext(query: string): Promise<string> {
+  const index = getPineconeIndex();
+  
+  if (!index) {
+    console.log("RAG: Pinecone not configured, skipping retrieval");
+    return "";
+  }
+
+  try {
+    // Create embedding for the user's query
+    const queryEmbedding = await openai.embeddings.create({
+      model: "text-embedding-3-small",
+      input: query,
+    });
+
+    // Query Pinecone for similar documents
+    const results = await index.query({
+      vector: queryEmbedding.data[0].embedding,
+      topK: 5, // Get top 5 most relevant chunks
+      includeMetadata: true,
+    });
+
+    if (!results.matches || results.matches.length === 0) {
+      console.log("RAG: No relevant documents found");
+      return "";
+    }
+
+    // Format the retrieved context
+    const contextParts = results.matches
+      .filter((match) => match.score && match.score > 0.3) // Only include good matches
+      .map((match) => {
+        const metadata = match.metadata as {
+          text?: string;
+          source?: string;
+          category?: string;
+        };
+        const source = metadata?.source || "Unknown";
+        const category = metadata?.category || "general";
+        const text = metadata?.text || "";
+        return `[Source: ${source} (${category})]\n${text}`;
+      });
+
+    if (contextParts.length === 0) {
+      return "";
+    }
+
+    console.log(`RAG: Retrieved ${contextParts.length} relevant document chunks`);
+    return contextParts.join("\n\n---\n\n");
+  } catch (error) {
+    console.error("RAG retrieval error:", error);
+    return ""; // Fail gracefully - continue without RAG context
+  }
+}
+
 export async function POST(req: NextRequest) {
   try {
     const { messages } = await req.json();
@@ -148,36 +219,63 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Get the user's latest message for RAG retrieval
+    const userMessages = messages.filter((m: { role: string }) => m.role === "user");
+    const latestUserMessage = userMessages[userMessages.length - 1]?.content || "";
+
+    // Retrieve relevant document context using RAG
+    const documentContext = await retrieveRelevantContext(latestUserMessage);
+
+    // Build the enhanced system prompt with document context
+    let enhancedPrompt = SYSTEM_PROMPT;
+    
+    if (documentContext) {
+      enhancedPrompt += `
+
+---
+
+RELEVANT EXCERPTS FROM OAK HILL SETTLEMENT DOCUMENTS:
+
+The following excerpts are from the actual Oak Hill Settlement governing documents and may be directly relevant to the user's question. Use these to provide specific, accurate answers and cite the source document when referencing this information.
+
+${documentContext}
+
+---
+
+When answering, prioritize information from the document excerpts above. Cite the specific source document (e.g., "According to the CC&Rs..." or "The Bylaws state...") when using this information.`;
+    }
+
     // Create chat completion with GPT-4
     const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini", // More cost-effective, still very capable
+      model: "gpt-4o-mini",
       messages: [
-        { role: "system", content: SYSTEM_PROMPT },
-        ...messages.map((m: any) => ({
-          role: m.role,
+        { role: "system", content: enhancedPrompt },
+        ...messages.map((m: { role: string; content: string }) => ({
+          role: m.role as "user" | "assistant" | "system",
           content: m.content,
         })),
       ],
       temperature: 0.7,
-      max_tokens: 1000,
+      max_tokens: 1500, // Increased for more detailed responses with citations
     });
 
-    const assistantMessage = completion.choices[0]?.message?.content || 
+    const assistantMessage =
+      completion.choices[0]?.message?.content ||
       "I'm sorry, I couldn't generate a response. Please try again.";
 
     return NextResponse.json({
       message: assistantMessage,
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Chat API error:", error);
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
     return NextResponse.json(
       {
         message:
           "An error occurred while processing your request. Please try again later.",
-        error: error.message,
+        error: errorMessage,
       },
       { status: 500 }
     );
   }
 }
-
