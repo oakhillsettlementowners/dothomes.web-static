@@ -7,7 +7,23 @@ export const metadata: Metadata = {
   description: "Access HOA governing documents, CC&Rs, bylaws, and meeting minutes",
 };
 
-const documents = [
+interface DocumentFile {
+  title: string;
+  description: string;
+  filename: string;
+  date: string;
+  size: string;
+  external?: boolean;
+  target?: string;
+  url?: string;
+}
+
+interface DocumentCategory {
+  category: string;
+  files: DocumentFile[];
+}
+
+const documents: DocumentCategory[] = [
   {
     category: "Governing Documents",
     files: [
