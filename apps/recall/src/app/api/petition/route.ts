@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 // Optional: Add RESEND_API_KEY to .env.local to enable email notifications
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const NOTIFICATION_EMAIL = "recall@oakhillsettlement.homes";
+const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || "recall@oakhillsettlement.homes";
 
 export async function POST(request: NextRequest) {
   try {
