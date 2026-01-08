@@ -17,7 +17,7 @@ export default function RecallBanner({ variant }: RecallBannerProps) {
           href="https://recall.oakhillsettlement.homes/petition#stage" 
           className="text-amber-800 dark:text-amber-200 hover:underline font-medium"
         >
-          🗳️ Recall effort in progress — Sign the petition →
+          🗳️ Recall in progress • Sign the petition
         </a>
       </div>
     );
@@ -31,7 +31,7 @@ export default function RecallBanner({ variant }: RecallBannerProps) {
           href="https://recall.oakhillsettlement.homes/petition#stage" 
           className="text-amber-800 dark:text-amber-200 hover:underline font-medium"
         >
-          🗳️ Recall effort in progress — Sign the petition →
+          🗳️ Recall effort in progress — Sign the petition
         </a>
       </div>
     );
@@ -44,7 +44,7 @@ export default function RecallBanner({ variant }: RecallBannerProps) {
         href="https://recall.oakhillsettlement.homes/petition#stage" 
         className="text-amber-800 dark:text-amber-200 hover:underline font-medium"
       >
-        🗳️ Recall effort in progress — Sign the petition →
+        🗳️ Recall effort in progress — Sign the petition
       </a>
     </div>
   );
