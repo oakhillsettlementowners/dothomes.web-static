@@ -4,6 +4,30 @@ import { NextRequest, NextResponse } from "next/server";
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || "recall@oakhillsettlement.homes";
 
+// Calculate expiration date (11 months from submission per ORS 94.647(3))
+function calculateExpirationDate(timestamp: string): string {
+  const submissionDate = new Date(timestamp);
+  const expirationDate = new Date(submissionDate);
+  expirationDate.setMonth(expirationDate.getMonth() + 11);
+  return expirationDate.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}
+
+// Format timestamp for display
+function formatTimestamp(timestamp: string): string {
+  return new Date(timestamp).toLocaleString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+    timeZoneName: 'short'
+  });
+}
+
 export async function POST(request: NextRequest) {
   try {
     const contentType = request.headers.get("content-type") || "";
@@ -51,13 +75,22 @@ export async function POST(request: NextRequest) {
     console.log(`  Proxy authorized: ${authorizeProxy}`);
     console.log("---");
 
-    // Send email notification if Resend is configured
+    // Send email notifications if Resend is configured
     if (RESEND_API_KEY) {
+      // Send notification to organizers
       try {
         await sendEmailNotification({ name, address, email, timestamp });
       } catch (emailError) {
-        console.error("Failed to send email notification:", emailError);
+        console.error("Failed to send organizer notification:", emailError);
         // Don't fail the submission if email fails - we have the log
+      }
+
+      // Send confirmation to homeowner
+      try {
+        await sendHomeownerConfirmation({ name, address, email, timestamp });
+      } catch (emailError) {
+        console.error("Failed to send homeowner confirmation:", emailError);
+        // Don't fail the submission if email fails
       }
     }
 
@@ -75,6 +108,9 @@ async function sendEmailNotification(data: {
   email: string;
   timestamp: string;
 }) {
+  const expirationDate = calculateExpirationDate(data.timestamp);
+  const formattedTimestamp = formatTimestamp(data.timestamp);
+
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -86,20 +122,83 @@ async function sendEmailNotification(data: {
       to: [NOTIFICATION_EMAIL],
       subject: `New Proxy Vote: ${data.name}`,
       text: `
-New proxy vote submission received:
+NEW PROXY VOTE SUBMISSION - Oak Hill Settlement Board Recall
 
-Name: ${data.name}
-Address: ${data.address}
-Email: ${data.email}
-Submitted: ${data.timestamp}
+SUBMISSION DETAILS:
+- Name: ${data.name}
+- Property Address: ${data.address}
+- Email: ${data.email}
+- Submitted: ${formattedTimestamp}
+- Scope: Board recall election ONLY
 
+CONFIRMATIONS:
 ✓ Confirmed homeowner in Oak Hill Settlement
 ✓ Authorized proxy vote for recall election
 
+LEGAL NOTICE (ORS 94.647):
+This proxy expires on ${expirationDate} (11 months from submission) unless revoked earlier.
+
+REVOCATION:
+Homeowner may revoke by emailing recall@oakhillsettlement.homes
+
 ---
 This is an automated notification from the recall petition form.
+Homeowner has been sent a confirmation copy of this submission.
       `.trim(),
       reply_to: data.email,
+    }),
+  });
+
+  if (!response.ok) {
+    const error = await response.text();
+    throw new Error(`Resend API error: ${error}`);
+  }
+}
+
+async function sendHomeownerConfirmation(data: {
+  name: string;
+  address: string;
+  email: string;
+  timestamp: string;
+}) {
+  const expirationDate = calculateExpirationDate(data.timestamp);
+  const formattedTimestamp = formatTimestamp(data.timestamp);
+
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${RESEND_API_KEY}`,
+    },
+    body: JSON.stringify({
+      from: "Oak Hill Recall <petition@recall.oakhillsettlement.homes>",
+      to: [data.email],
+      subject: "Proxy Vote Confirmation - Oak Hill Settlement Recall",
+      text: `
+PROXY VOTE CONFIRMATION - Oak Hill Settlement Recall
+
+Dear ${data.name},
+
+This confirms your proxy vote submission for the Oak Hill Settlement Board recall election.
+
+SUBMISSION DETAILS:
+- Name: ${data.name}
+- Property Address: ${data.address}
+- Submitted: ${formattedTimestamp}
+- Scope: Board recall election ONLY
+
+LEGAL NOTICE (ORS 94.647):
+This proxy expires on ${expirationDate} (11 months from submission) unless revoked earlier.
+
+TO REVOKE THIS PROXY:
+Email recall@oakhillsettlement.homes at any time to revoke your proxy submission.
+
+---
+Oak Hill Settlement Homeowner Recall Effort
+https://recall.oakhillsettlement.homes
+
+This is your confirmation copy. Please keep this for your records.
+      `.trim(),
     }),
   });
 
@@ -133,4 +232,3 @@ function handleError(request: NextRequest, message: string, status: number) {
   errorUrl.hash = "stage";
   return NextResponse.redirect(errorUrl);
 }
-
