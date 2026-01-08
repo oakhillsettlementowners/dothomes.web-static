@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Footer from "@/components/Footer";
 import StumpLogo from "@/components/StumpLogo";
+import RecallBanner from "@/components/RecallBanner";
 
 export const metadata: Metadata = {
   title: "HOA Documents - Oak Hill Settlement",
@@ -143,6 +144,7 @@ export default function DocumentsPage() {
     <div className="min-h-screen bg-gradient-to-b from-primary-50 to-stone-50 dark:from-stone-950 dark:to-black">
       {/* Header - Book cover style on mobile */}
       <header className="min-h-screen md:min-h-0 flex flex-col justify-between md:block border-b border-primary-200 dark:border-stone-800 bg-white/80 dark:bg-stone-950/80 backdrop-blur-sm md:sticky md:top-0 z-50">
+        <RecallBanner variant="desktop" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-4">
           <a href="/#stage" className="flex items-center gap-3 group">
             <StumpLogo className="w-12 h-12 md:w-10 md:h-10 text-primary-700 dark:text-primary-400 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors" />
