@@ -261,9 +261,10 @@ function ChatEnabled() {
             {[
               "Do I need ARC approval to touch up existing exterior paint?",
               "Do the CC&Rs require a licensed contractor for paint touch-ups?",
-              "What are the architectural guidelines?",
-              "How do I request a board meeting?",
-              "What does ORS 94 say about special assessments?",
+              "How many votes are needed to recall a board member?",
+              "How is quorum calculated for our 194-lot community?",
+              "What are the limits on special assessments under ORS 94?",
+              "What happens if the ARC doesn't respond in 20 days?",
             ].map((question) => (
               <button
                 key={question}
