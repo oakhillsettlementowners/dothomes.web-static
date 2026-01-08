@@ -82,7 +82,7 @@ async function sendEmailNotification(data: {
       Authorization: `Bearer ${RESEND_API_KEY}`,
     },
     body: JSON.stringify({
-      from: "Oak Hill Recall <noreply@recall.oakhillsettlement.homes>",
+      from: "Oak Hill Recall <petition@recall.oakhillsettlement.homes>",
       to: [NOTIFICATION_EMAIL],
       subject: `New Proxy Vote: ${data.name}`,
       text: `
