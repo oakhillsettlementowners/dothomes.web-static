@@ -209,7 +209,7 @@ export default function Home() {
         </div>
 
         {/* ARC Tools Section */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 [&>*]:min-w-0">
           {/* ARC Timeline Assistant */}
           <ARCAssistant />
 

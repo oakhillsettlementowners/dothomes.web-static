@@ -70,7 +70,7 @@ export default function ARCAssistant() {
   };
 
   return (
-    <div id="arc-timeline-assistant" className="bg-white dark:bg-stone-950/70 border border-primary-200 dark:border-stone-800 rounded-xl shadow-lg p-8">
+    <div id="arc-timeline-assistant" className="bg-white dark:bg-stone-950/70 border border-primary-200 dark:border-stone-800 rounded-xl shadow-lg p-8 overflow-hidden">
       <h3 className="text-2xl font-bold text-primary-900 dark:text-stone-100 mb-4">
         ⏱️ ARC Timeline Assistant
       </h3>
@@ -91,7 +91,7 @@ export default function ARCAssistant() {
           id="submission-date"
           value={submissionDate}
           onChange={handleDateChange}
-          className="w-full px-4 py-3 rounded-lg border border-primary-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-primary-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
+          className="w-full max-w-full min-w-0 box-border px-4 py-3 rounded-lg border border-primary-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-primary-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
         />
       </div>
 
