@@ -345,7 +345,7 @@ export default function DocumentsPage() {
               Settlement governing documents. Ask questions in plain English and get informed!
             </p>
             <a
-              href="/chat"
+              href="/chat#stage"
               className="inline-block bg-white dark:bg-primary-700 text-primary-700 dark:text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-primary-900 hover:shadow-lg dark:hover:bg-primary-800 dark:hover:text-white focus:outline-none focus:ring-4 focus:ring-white/50 dark:focus:ring-primary-400/50 focus:bg-white focus:text-primary-900 dark:focus:bg-primary-800 dark:focus:text-white transition-all shadow-md"
             >
               Ask the AI Assistant
