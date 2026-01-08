@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || "recall@oakhillsettlement.homes";
 
-// Calculate expiration date (11 months from submission per ORS 94.647(3))
+// Calculate maximum expiration date (up to 11 months per ORS 94.647)
 function calculateExpirationDate(timestamp: string): string {
   const submissionDate = new Date(timestamp);
   const expirationDate = new Date(submissionDate);
@@ -62,12 +62,12 @@ export async function POST(request: NextRequest) {
     }
 
     if (!confirmHomeowner || !authorizeProxy) {
-      return handleError(request, "Please confirm both checkboxes to submit your proxy vote.", 400);
+      return handleError(request, "Please confirm both checkboxes to submit your proxy authorization.", 400);
     }
 
     // Log the submission (always)
     const timestamp = new Date().toISOString();
-    console.log(`[PROXY VOTE] ${timestamp}`);
+    console.log(`[PROXY AUTHORIZATION] ${timestamp}`);
     console.log(`  Name: ${name}`);
     console.log(`  Address: ${address}`);
     console.log(`  Email: ${email}`);
@@ -120,9 +120,9 @@ async function sendEmailNotification(data: {
     body: JSON.stringify({
       from: "Oak Hill Recall <petition@recall.oakhillsettlement.homes>",
       to: [NOTIFICATION_EMAIL],
-      subject: `New Proxy Vote: ${data.name}`,
+      subject: `New Proxy Authorization: ${data.name}`,
       text: `
-NEW PROXY VOTE SUBMISSION - Oak Hill Settlement Board Recall
+NEW PROXY AUTHORIZATION - Oak Hill Settlement Board Recall
 
 SUBMISSION DETAILS:
 - Name: ${data.name}
@@ -131,12 +131,14 @@ SUBMISSION DETAILS:
 - Submitted: ${formattedTimestamp}
 - Scope: Board recall election ONLY
 
+NOTE: This is a proxy authorization appointing recall organizers to vote on the homeowner's behalf at the recall election. This is not a ballot - the actual vote will be cast at the election meeting.
+
 CONFIRMATIONS:
 ✓ Confirmed homeowner in Oak Hill Settlement
-✓ Authorized proxy vote for recall election
+✓ Authorized proxy designation for recall election
 
 LEGAL NOTICE (ORS 94.647):
-This proxy expires on ${expirationDate} (11 months from submission) unless revoked earlier.
+This proxy authorization remains valid for up to eleven (11) months from the date of submission (${expirationDate}), unless revoked earlier.
 
 REVOCATION:
 Homeowner may revoke by emailing recall@oakhillsettlement.homes
@@ -174,13 +176,15 @@ async function sendHomeownerConfirmation(data: {
       from: "Oak Hill Recall <petition@recall.oakhillsettlement.homes>",
       to: [data.email],
       reply_to: "recall@oakhillsettlement.homes",
-      subject: "Proxy Vote Confirmation - Oak Hill Settlement Recall",
+      subject: "Proxy Authorization Confirmation - Oak Hill Settlement Recall",
       text: `
-PROXY VOTE CONFIRMATION - Oak Hill Settlement Recall
+PROXY AUTHORIZATION CONFIRMATION - Oak Hill Settlement Recall
 
 Dear ${data.name},
 
-This confirms your proxy vote submission for the Oak Hill Settlement Board recall election.
+This confirms your proxy authorization for the Oak Hill Settlement Board recall election.
+
+NOTE: This is a proxy authorization appointing recall organizers to vote on your behalf at the recall election. This is not a ballot - the actual vote will be cast at the election meeting.
 
 SUBMISSION DETAILS:
 - Name: ${data.name}
@@ -189,10 +193,10 @@ SUBMISSION DETAILS:
 - Scope: Board recall election ONLY
 
 LEGAL NOTICE (ORS 94.647):
-This proxy expires on ${expirationDate} (11 months from submission) unless revoked earlier.
+This proxy authorization remains valid for up to eleven (11) months from the date of submission (${expirationDate}), unless revoked earlier.
 
 TO REVOKE THIS PROXY:
-Email recall@oakhillsettlement.homes at any time to revoke your proxy submission.
+Email recall@oakhillsettlement.homes at any time to revoke your proxy authorization.
 
 ---
 Oak Hill Settlement Homeowner Recall Effort
@@ -213,7 +217,7 @@ function handleSuccess(request: NextRequest) {
   const acceptsJson = request.headers.get("accept")?.includes("application/json");
   
   if (acceptsJson) {
-    return NextResponse.json({ success: true, message: "Proxy vote submitted successfully." });
+    return NextResponse.json({ success: true, message: "Proxy authorization submitted successfully." });
   }
   
   // Redirect to success page for non-JS form submissions
