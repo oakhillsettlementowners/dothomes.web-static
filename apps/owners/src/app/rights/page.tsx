@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Footer from "@/components/Footer";
 import StumpLogo from "@/components/StumpLogo";
 import RecallBanner from "@/components/RecallBanner";
+import { SHOW_CHAT } from "@/lib/features";
 
 export const metadata: Metadata = {
   title: "Know Your Rights - Oak Hill Settlement",
@@ -55,14 +56,16 @@ export default function RightsPage() {
                 Documents
               </a>
             </li>
-            <li>
-              <a
-                href="/chat#stage"
-                className="text-lg md:text-base text-primary-700 hover:text-primary-900 focus:text-primary-900 dark:text-stone-200 dark:hover:text-white dark:focus:text-white transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 rounded px-2 py-1 -mx-2 -my-1"
-              >
-                Ask AI
-              </a>
-            </li>
+            {SHOW_CHAT && (
+              <li>
+                <a
+                  href="/chat#stage"
+                  className="text-lg md:text-base text-primary-700 hover:text-primary-900 focus:text-primary-900 dark:text-stone-200 dark:hover:text-white dark:focus:text-white transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 rounded px-2 py-1 -mx-2 -my-1"
+                >
+                  Ask AI
+                </a>
+              </li>
+            )}
           </ul>
         </nav>
       </header>
@@ -439,17 +442,19 @@ export default function RightsPage() {
               </p>
             </a>
 
-            <a
-              href="/chat#stage"
-              className="block bg-white dark:bg-stone-950/70 border border-primary-200 dark:border-stone-800 rounded-xl shadow-lg p-6 hover:shadow-xl hover:border-primary-400 dark:hover:border-stone-600 transition-all"
-            >
-              <h4 className="text-xl font-bold text-primary-900 dark:text-stone-100 mb-2">
-                🤖 Ask the AI Assistant
-              </h4>
-              <p className="text-primary-800 dark:text-stone-200 text-sm">
-                Get answers about your rights and Oregon HOA law
-              </p>
-            </a>
+            {SHOW_CHAT && (
+              <a
+                href="/chat#stage"
+                className="block bg-white dark:bg-stone-950/70 border border-primary-200 dark:border-stone-800 rounded-xl shadow-lg p-6 hover:shadow-xl hover:border-primary-400 dark:hover:border-stone-600 transition-all"
+              >
+                <h4 className="text-xl font-bold text-primary-900 dark:text-stone-100 mb-2">
+                  🤖 Ask the AI Assistant
+                </h4>
+                <p className="text-primary-800 dark:text-stone-200 text-sm">
+                  Get answers about your rights and Oregon HOA law
+                </p>
+              </a>
+            )}
           </div>
         </div>
 

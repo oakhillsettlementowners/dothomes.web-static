@@ -2,6 +2,7 @@ import ARCAssistant from '@/components/ARCAssistant';
 import Footer from '@/components/Footer';
 import StumpLogo from '@/components/StumpLogo';
 import RecallBanner from '@/components/RecallBanner';
+import { SHOW_CHAT } from '@/lib/features';
 
 export default function Home() {
   return (
@@ -50,14 +51,16 @@ export default function Home() {
                 Documents
               </a>
             </li>
-            <li>
-              <a
-                href="/chat#stage"
-                className="text-lg md:text-base text-primary-700 hover:text-primary-900 focus:text-primary-900 dark:text-stone-200 dark:hover:text-white dark:focus:text-white transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 rounded px-2 py-1 -mx-2 -my-1"
-              >
-                Ask AI
-              </a>
-            </li>
+            {SHOW_CHAT && (
+              <li>
+                <a
+                  href="/chat#stage"
+                  className="text-lg md:text-base text-primary-700 hover:text-primary-900 focus:text-primary-900 dark:text-stone-200 dark:hover:text-white dark:focus:text-white transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 rounded px-2 py-1 -mx-2 -my-1"
+                >
+                  Ask AI
+                </a>
+              </li>
+            )}
           </ul>
         </nav>
       </header>
@@ -120,15 +123,17 @@ export default function Home() {
                   Independent document archive
                 </a>
               </li>
-              <li className="flex items-start">
-                <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
-                <a 
-                  href="/chat#stage"
-                  className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium"
-                >
-                  AI chat assistant trained on Oregon law and governing documents
-                </a>
-              </li>
+              {SHOW_CHAT && (
+                <li className="flex items-start">
+                  <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
+                  <a 
+                    href="/chat#stage"
+                    className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium"
+                  >
+                    AI chat assistant trained on Oregon law and governing documents
+                  </a>
+                </li>
+              )}
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
                 <a 
@@ -177,12 +182,14 @@ export default function Home() {
                   ARC Timeline Assistant
                 </a>
               </li>
-              <li className="flex items-start">
-                <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
-                <a href="/chat#stage" className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium">
-                  Ask AI about HOA law & procedures
-                </a>
-              </li>
+              {SHOW_CHAT && (
+                <li className="flex items-start">
+                  <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
+                  <a href="/chat#stage" className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium">
+                    Ask AI about HOA law & procedures
+                  </a>
+                </li>
+              )}
             </ul>
             <div className="flex gap-3 items-center">
               <a
@@ -236,21 +243,23 @@ export default function Home() {
               </div>
 
               {/* Ask AI Assistant */}
-              <div className="bg-primary-50 dark:bg-primary-950/30 border border-primary-200 dark:border-stone-700 rounded-lg p-4">
-                <h4 className="font-semibold text-primary-900 dark:text-stone-100 mb-2 flex items-center gap-2">
-                  <span>🤖</span>
-                  <span>Need Help?</span>
-                </h4>
-                <p className="text-sm text-primary-800 dark:text-stone-200 mb-3">
-                  Ask our AI assistant about ARC requirements, CC&R guidelines, and submission procedures
-                </p>
-                <a
-                  href="/chat#stage"
-                  className="inline-block w-full text-center bg-white dark:bg-stone-900 border-2 border-primary-600 dark:border-stone-600 hover:bg-primary-50 dark:hover:bg-stone-800 text-primary-700 dark:text-primary-300 font-semibold px-4 py-3 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
-                >
-                  Ask AI Assistant
-                </a>
-              </div>
+              {SHOW_CHAT && (
+                <div className="bg-primary-50 dark:bg-primary-950/30 border border-primary-200 dark:border-stone-700 rounded-lg p-4">
+                  <h4 className="font-semibold text-primary-900 dark:text-stone-100 mb-2 flex items-center gap-2">
+                    <span>🤖</span>
+                    <span>Need Help?</span>
+                  </h4>
+                  <p className="text-sm text-primary-800 dark:text-stone-200 mb-3">
+                    Ask our AI assistant about ARC requirements, CC&R guidelines, and submission procedures
+                  </p>
+                  <a
+                    href="/chat#stage"
+                    className="inline-block w-full text-center bg-white dark:bg-stone-900 border-2 border-primary-600 dark:border-stone-600 hover:bg-primary-50 dark:hover:bg-stone-800 text-primary-700 dark:text-primary-300 font-semibold px-4 py-3 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
+                  >
+                    Ask AI Assistant
+                  </a>
+                </div>
+              )}
 
             </div>
           </div>

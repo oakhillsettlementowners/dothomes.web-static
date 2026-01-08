@@ -5,12 +5,56 @@ import Footer from "@/components/Footer";
 import StumpLogo from "@/components/StumpLogo";
 import RecallBanner from "@/components/RecallBanner";
 
+const SHOW_CHAT = process.env.NEXT_PUBLIC_SHOW_CHAT === "true";
+
 type Message = {
   role: "user" | "assistant" | "system";
   content: string;
 };
 
-export default function ChatPage() {
+function ChatDisabled() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-primary-50 to-stone-50 dark:from-stone-950 dark:to-black flex flex-col">
+      <header className="border-b border-primary-200 dark:border-stone-800 bg-white/80 dark:bg-stone-950/80 backdrop-blur-sm">
+        <RecallBanner variant="desktop" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-4">
+          <a href="/#stage" className="flex items-center gap-3 group">
+            <StumpLogo className="w-12 h-12 md:w-10 md:h-10 text-primary-700 dark:text-primary-400 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors" />
+            <div>
+              <h1 className="text-3xl md:text-2xl font-bold text-primary-900 dark:text-stone-100 group-hover:text-primary-700 dark:group-hover:text-stone-300 transition-colors">
+                <span className="block text-sm font-normal text-primary-700 dark:text-stone-300 group-hover:text-primary-600 dark:group-hover:text-stone-400 transition-colors">Homeowners of</span>
+                Oak Hill Settlement
+              </h1>
+              <p className="text-sm text-primary-700 dark:text-stone-300">
+                Forest Grove, Oregon
+              </p>
+            </div>
+          </a>
+        </div>
+      </header>
+      <main className="flex-1 flex items-center justify-center px-4">
+        <div className="text-center max-w-md">
+          <div className="text-6xl mb-6">🤖</div>
+          <h2 className="text-2xl font-bold text-primary-900 dark:text-stone-100 mb-4">
+            AI Assistant Coming Soon
+          </h2>
+          <p className="text-primary-700 dark:text-stone-300 mb-6">
+            Our community AI assistant is being configured. Check back soon for help with Oregon HOA law and governing documents.
+          </p>
+          <a
+            href="/#stage"
+            className="inline-block bg-primary-600 hover:bg-primary-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+          >
+            Return Home
+          </a>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+function ChatEnabled() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
@@ -242,3 +286,9 @@ export default function ChatPage() {
   );
 }
 
+export default function ChatPage() {
+  if (!SHOW_CHAT) {
+    return <ChatDisabled />;
+  }
+  return <ChatEnabled />;
+}

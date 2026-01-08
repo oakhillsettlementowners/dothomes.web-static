@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Footer from "@/components/Footer";
 import StumpLogo from "@/components/StumpLogo";
 import RecallBanner from "@/components/RecallBanner";
+import { SHOW_CHAT } from "@/lib/features";
 
 export const metadata: Metadata = {
   title: "HOA Documents - Oak Hill Settlement",
@@ -186,14 +187,16 @@ export default function DocumentsPage() {
                 Documents
               </a>
             </li>
-            <li>
-              <a
-                href="/chat#stage"
-                className="text-lg md:text-base text-primary-700 hover:text-primary-900 focus:text-primary-900 dark:text-stone-200 dark:hover:text-white dark:focus:text-white transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 rounded px-2 py-1 -mx-2 -my-1"
-              >
-                Ask AI
-              </a>
-            </li>
+            {SHOW_CHAT && (
+              <li>
+                <a
+                  href="/chat#stage"
+                  className="text-lg md:text-base text-primary-700 hover:text-primary-900 focus:text-primary-900 dark:text-stone-200 dark:hover:text-white dark:focus:text-white transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 rounded px-2 py-1 -mx-2 -my-1"
+                >
+                  Ask AI
+                </a>
+              </li>
+            )}
           </ul>
         </nav>
       </header>
@@ -335,23 +338,25 @@ export default function DocumentsPage() {
         </div>
 
         {/* AI Chat CTA */}
-        <div className="mt-8 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-900 dark:to-primary-950 rounded-xl shadow-lg p-8 text-white border border-primary-700 dark:border-stone-700">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold mb-3 dark:text-stone-100">
-              Need Help Understanding These Documents?
-            </h3>
-            <p className="text-primary-50 dark:text-stone-200 mb-6">
-              Our community AI assistant is trained on Oregon HOA law (ORS 94) and Oak Hill
-              Settlement governing documents. Ask questions in plain English and get informed!
-            </p>
-            <a
-              href="/chat#stage"
-              className="inline-block bg-white dark:bg-primary-700 text-primary-700 dark:text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-primary-900 hover:shadow-lg dark:hover:bg-primary-800 dark:hover:text-white focus:outline-none focus:ring-4 focus:ring-white/50 dark:focus:ring-primary-400/50 focus:bg-white focus:text-primary-900 dark:focus:bg-primary-800 dark:focus:text-white transition-all shadow-md"
-            >
-              Ask the AI Assistant
-            </a>
+        {SHOW_CHAT && (
+          <div className="mt-8 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-900 dark:to-primary-950 rounded-xl shadow-lg p-8 text-white border border-primary-700 dark:border-stone-700">
+            <div className="max-w-3xl mx-auto text-center">
+              <h3 className="text-2xl font-bold mb-3 dark:text-stone-100">
+                Need Help Understanding These Documents?
+              </h3>
+              <p className="text-primary-50 dark:text-stone-200 mb-6">
+                Our community AI assistant is trained on Oregon HOA law (ORS 94) and Oak Hill
+                Settlement governing documents. Ask questions in plain English and get informed!
+              </p>
+              <a
+                href="/chat#stage"
+                className="inline-block bg-white dark:bg-primary-700 text-primary-700 dark:text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-primary-900 hover:shadow-lg dark:hover:bg-primary-800 dark:hover:text-white focus:outline-none focus:ring-4 focus:ring-white/50 dark:focus:ring-primary-400/50 focus:bg-white focus:text-primary-900 dark:focus:bg-primary-800 dark:focus:text-white transition-all shadow-md"
+              >
+                Ask the AI Assistant
+              </a>
+            </div>
           </div>
-        </div>
+        )}
 
         <Footer />
       </main>
