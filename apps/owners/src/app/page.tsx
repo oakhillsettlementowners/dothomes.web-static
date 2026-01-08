@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary-50 to-stone-50 dark:from-stone-950 dark:to-black">
       {/* Header - Book cover style on mobile */}
-      <header className={`${SHOW_RECALL_BANNER ? 'min-h-[calc(100dvh-41px)]' : 'min-h-[100dvh]'} md:min-h-0 flex flex-col md:block border-b border-primary-200 dark:border-stone-800 bg-white/80 dark:bg-stone-950/80 backdrop-blur-sm md:sticky md:top-0 z-50`}>
+      <header className={`${SHOW_RECALL_BANNER ? 'min-h-[calc(100svh-41px)]' : 'min-h-[100svh]'} md:min-h-0 flex flex-col md:block border-b border-primary-200 dark:border-stone-800 bg-white/80 dark:bg-stone-950/80 backdrop-blur-sm md:sticky md:top-0 z-50`}>
         <RecallBanner variant="desktop" />
         <div className="flex-1 md:flex-none max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-4">
           <div className="flex items-center gap-3">
