@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Oak Hill HOA",
+    title: "Oak Hill Owners",
   },
   openGraph: {
     type: "website",
