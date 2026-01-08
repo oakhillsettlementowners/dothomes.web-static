@@ -14,7 +14,7 @@ export default function RecallBanner({ variant }: RecallBannerProps) {
     return (
       <div className={`${baseClasses} sticky top-0 z-[60] bg-amber-100 dark:bg-amber-900 md:hidden`}>
         <a 
-          href="https://recall.oakhillsettlement.homes" 
+          href="https://recall.oakhillsettlement.homes/#stage" 
           className="text-amber-800 dark:text-amber-200 hover:underline font-medium"
         >
           🗳️ Recall effort in progress — Sign the petition →
@@ -28,7 +28,7 @@ export default function RecallBanner({ variant }: RecallBannerProps) {
     return (
       <div className={`${baseClasses} hidden md:block bg-amber-100/80 dark:bg-amber-900/30 backdrop-blur-sm`}>
         <a 
-          href="https://recall.oakhillsettlement.homes" 
+          href="https://recall.oakhillsettlement.homes/#stage" 
           className="text-amber-800 dark:text-amber-200 hover:underline font-medium"
         >
           🗳️ Recall effort in progress — Sign the petition →
@@ -41,7 +41,7 @@ export default function RecallBanner({ variant }: RecallBannerProps) {
   return (
     <div className={`${baseClasses} sticky top-0 z-[60] bg-amber-100 dark:bg-amber-900 md:bg-amber-100/80 md:dark:bg-amber-900/30 md:backdrop-blur-sm`}>
       <a 
-        href="https://recall.oakhillsettlement.homes" 
+        href="https://recall.oakhillsettlement.homes/#stage" 
         className="text-amber-800 dark:text-amber-200 hover:underline font-medium"
       >
         🗳️ Recall effort in progress — Sign the petition →

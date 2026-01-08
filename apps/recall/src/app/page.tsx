@@ -98,7 +98,7 @@ export default function Home() {
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
                 <span className="text-primary-800 dark:text-stone-200">
-                  <a href="/petition" className="font-bold underline hover:text-primary-900 dark:hover:text-white">Sign the petition</a> - We need 10% of owners to initiate a 
+                  <a href="/petition#stage" className="font-bold underline hover:text-primary-900 dark:hover:text-white">Sign the petition</a> - We need 10% of owners to initiate a 
                   recall vote (ORS 94.640)
                 </span>
               </li>
@@ -134,7 +134,7 @@ export default function Home() {
             </ul>
             <div className="mt-6 pt-6 border-t border-primary-200 dark:border-stone-700">
               <a
-                href="https://owners.oakhillsettlement.homes/rights"
+                href="https://owners.oakhillsettlement.homes/rights#stage"
                 className="text-sm text-primary-700 dark:text-primary-400 hover:text-primary-900 dark:hover:text-primary-300 underline font-medium"
               >
                 → Read the full Homeowner Rights Guide
@@ -155,7 +155,7 @@ export default function Home() {
               petition for a recall vote. Add your name to hold the Board accountable.
             </p>
             <a
-              href="/petition"
+              href="/petition#stage"
               className="inline-block bg-white dark:bg-primary-700 text-primary-700 dark:text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-primary-900 hover:shadow-lg dark:hover:bg-primary-800 dark:hover:text-white focus:outline-none focus:ring-4 focus:ring-white/50 dark:focus:ring-primary-400/50 focus:bg-white focus:text-primary-900 dark:focus:bg-primary-800 dark:focus:text-white transition-all shadow-md"
             >
               Sign the Petition →
@@ -167,7 +167,7 @@ export default function Home() {
         <div className="mt-16 text-center text-sm text-primary-700 dark:text-stone-400">
           <p className="mb-3">
             <a
-              href="https://owners.oakhillsettlement.homes"
+              href="https://owners.oakhillsettlement.homes/#stage"
               className="underline hover:text-primary-900 dark:hover:text-stone-200 font-medium"
             >
               Visit the main community hub

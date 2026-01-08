@@ -428,7 +428,7 @@ export default function RightsPage() {
           {/* Resources */}
           <div className="grid md:grid-cols-2 gap-6">
             <a
-              href="/documents"
+              href="/documents#stage"
               className="block bg-white dark:bg-stone-950/70 border border-primary-200 dark:border-stone-800 rounded-xl shadow-lg p-6 hover:shadow-xl hover:border-primary-400 dark:hover:border-stone-600 transition-all"
             >
               <h4 className="text-xl font-bold text-primary-900 dark:text-stone-100 mb-2">
@@ -440,7 +440,7 @@ export default function RightsPage() {
             </a>
 
             <a
-              href="/chat"
+              href="/chat#stage"
               className="block bg-white dark:bg-stone-950/70 border border-primary-200 dark:border-stone-800 rounded-xl shadow-lg p-6 hover:shadow-xl hover:border-primary-400 dark:hover:border-stone-600 transition-all"
             >
               <h4 className="text-xl font-bold text-primary-900 dark:text-stone-100 mb-2">

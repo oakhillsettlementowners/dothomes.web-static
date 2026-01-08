@@ -151,7 +151,7 @@ function PetitionContent() {
             </p>
             <div className="space-y-3">
               <a
-                href="https://owners.oakhillsettlement.homes/rights"
+                href="https://owners.oakhillsettlement.homes/rights#stage"
                 className="block text-primary-700 dark:text-primary-400 hover:text-primary-900 dark:hover:text-primary-300 underline font-medium"
               >
                 Learn more about your rights →
@@ -366,7 +366,7 @@ function PetitionContent() {
         <div className="mt-12 text-center text-sm text-primary-700 dark:text-stone-400">
           <p className="mb-2">
             <a
-              href="https://owners.oakhillsettlement.homes"
+              href="https://owners.oakhillsettlement.homes/#stage"
               className="underline hover:text-primary-900 dark:hover:text-stone-200"
             >
               Visit the community hub

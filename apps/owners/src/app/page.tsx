@@ -105,7 +105,7 @@ export default function Home() {
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
                 <a 
-                  href="/rights"
+                  href="/rights#stage"
                   className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium"
                 >
                   Summary of your rights
@@ -114,7 +114,7 @@ export default function Home() {
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
                 <a 
-                  href="/documents"
+                  href="/documents#stage"
                   className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium"
                 >
                   Independent document archive
@@ -123,7 +123,7 @@ export default function Home() {
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
                 <a 
-                  href="/chat"
+                  href="/chat#stage"
                   className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium"
                 >
                   AI chat assistant trained on Oregon law and governing documents
@@ -161,13 +161,13 @@ export default function Home() {
             <ul className="space-y-3 mb-6">
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
-                <a href="/rights" className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium">
+                <a href="/rights#stage" className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium">
                   Know Your Rights under ORS 94
                 </a>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
-                <a href="/documents" className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium">
+                <a href="/documents#stage" className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium">
                   HOA Bylaws and CC&Rs
                 </a>
               </li>
@@ -179,20 +179,20 @@ export default function Home() {
               </li>
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
-                <a href="/chat" className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium">
+                <a href="/chat#stage" className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium">
                   Ask AI about HOA law & procedures
                 </a>
               </li>
             </ul>
             <div className="flex gap-3 items-center">
               <a
-                href="/rights"
+                href="/rights#stage"
                 className="inline-block text-sm bg-primary-600 hover:bg-primary-700 dark:bg-primary-700 dark:hover:bg-primary-800 border-2 border-primary-600 hover:border-primary-700 dark:border-primary-700 dark:hover:border-primary-800 text-white font-semibold px-4 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
               >
                 Know Your Rights
               </a>
               <a
-                href="/documents"
+                href="/documents#stage"
                 className="inline-block text-sm bg-white dark:bg-stone-900 border-2 border-primary-600 dark:border-stone-600 hover:bg-primary-50 dark:hover:bg-stone-800 text-primary-700 dark:text-primary-300 font-semibold px-4 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
               >
                 View Documents
@@ -245,7 +245,7 @@ export default function Home() {
                   Ask our AI assistant about ARC requirements, CC&R guidelines, and submission procedures
                 </p>
                 <a
-                  href="/chat"
+                  href="/chat#stage"
                   className="inline-block w-full text-center bg-white dark:bg-stone-900 border-2 border-primary-600 dark:border-stone-600 hover:bg-primary-50 dark:hover:bg-stone-800 text-primary-700 dark:text-primary-300 font-semibold px-4 py-3 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
                 >
                   Ask AI Assistant
