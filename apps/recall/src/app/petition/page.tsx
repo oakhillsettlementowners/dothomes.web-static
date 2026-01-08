@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect, FormEvent } from "react";
+import { useState, useEffect, FormEvent, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import StumpLogo from "@/components/StumpLogo";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
-export default function PetitionPage() {
+function PetitionContent() {
   const searchParams = useSearchParams();
   const [status, setStatus] = useState<FormStatus>("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -379,6 +379,14 @@ export default function PetitionPage() {
         </div>
       </main>
     </div>
+  );
+}
+
+export default function PetitionPage() {
+  return (
+    <Suspense fallback={null}>
+      <PetitionContent />
+    </Suspense>
   );
 }
 
