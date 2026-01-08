@@ -173,6 +173,7 @@ async function sendHomeownerConfirmation(data: {
     body: JSON.stringify({
       from: "Oak Hill Recall <petition@recall.oakhillsettlement.homes>",
       to: [data.email],
+      reply_to: "recall@oakhillsettlement.homes",
       subject: "Proxy Vote Confirmation - Oak Hill Settlement Recall",
       text: `
 PROXY VOTE CONFIRMATION - Oak Hill Settlement Recall
