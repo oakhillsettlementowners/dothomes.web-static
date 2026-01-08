@@ -117,7 +117,7 @@ function ChatEnabled() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary-50 to-stone-50 dark:from-stone-950 dark:to-black flex flex-col">
       {/* Header - Book cover style on mobile */}
-      <header className="min-h-screen md:min-h-0 flex flex-col md:block border-b border-primary-200 dark:border-stone-800 bg-white/80 dark:bg-stone-950/80 backdrop-blur-sm md:sticky md:top-0 z-50">
+      <header className="flex flex-col md:block border-b border-primary-200 dark:border-stone-800 bg-white/80 dark:bg-stone-950/80 backdrop-blur-sm md:sticky md:top-0 z-50">
         <RecallBanner variant="desktop" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-4">
           <a href="/#stage" className="flex items-center gap-3 group">
@@ -133,7 +133,7 @@ function ChatEnabled() {
             </div>
           </a>
         </div>
-        <nav className="mt-auto md:mt-0 pl-[4.75rem] pr-4 sm:px-6 lg:px-8 pb-8 md:pb-0 md:absolute md:right-4 lg:right-8 md:top-1/2 md:-translate-y-1/2">
+        <nav className="pl-[4.75rem] pr-4 sm:px-6 lg:px-8 pb-8 md:pb-0 md:absolute md:right-4 lg:right-8 md:top-1/2 md:-translate-y-1/2">
           <ul className="flex flex-col md:flex-row gap-4 md:gap-6 items-start md:items-center">
             <li>
               <a
