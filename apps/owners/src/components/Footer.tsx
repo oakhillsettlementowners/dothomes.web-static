@@ -9,13 +9,20 @@ export default function Footer() {
           Independent Community Hub
         </p>
         <p className="text-xs max-w-none">
-          Not affiliated with Oak&nbsp;Hill Settlement HOA Board of Directors or Superior Community Property Management.
+          Not affiliated with Oak&nbsp;Hill&nbsp;Settlement HOA Board of&nbsp;Directors or Superior Community Property&nbsp;Management.
         </p>
         <p className="text-xs max-w-none">
-          General information, not legal advice. For advice about your situation, talk to an attorney.
+          Written by homeowners. General information, not legal advice; for your situation, talk to an attorney.
+        </p>
+        <p className="text-xs max-w-none">
+          Spot an error?{" "}
+          <a href="/rights#suggest" className="underline hover:text-primary-900 dark:hover:text-stone-200">
+            Suggest a correction
+          </a>
+          .
         </p>
         <p className="mt-2 max-w-none">
-          By homeowners, for homeowners • Forest Grove, Oregon
+          By homeowners, for homeowners • Forest&nbsp;Grove, Oregon
         </p>
         <p className="mt-4 text-xs text-primary-600 dark:text-stone-500 italic max-w-none">
           This website was created with AI&nbsp;assistance. Check important info.

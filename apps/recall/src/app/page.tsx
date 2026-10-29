@@ -12,10 +12,10 @@ export default function Home() {
             <div>
               <h1 className="text-3xl md:text-2xl font-bold text-primary-900 dark:text-stone-100">
                 <span className="block text-sm font-normal text-primary-700 dark:text-stone-300">Homeowners of</span>
-                Oak Hill Settlement
+                Oak&nbsp;Hill&nbsp;Settlement
               </h1>
               <p className="text-sm text-primary-700 dark:text-stone-300">
-                Forest Grove, Oregon • Recall Campaign
+                Forest&nbsp;Grove, Oregon • Recall Campaign
               </p>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Home() {
                 <svg className="w-8 h-8 md:w-5 md:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                 </svg>
-                Your Rights
+                Owner Guide
               </a>
             </li>
           </ul>
@@ -68,8 +68,8 @@ export default function Home() {
             Recall the Board
           </h2>
           <p className="text-xl text-primary-800 dark:text-stone-200 max-w-3xl mx-auto">
-            Organizing Oak Hill Settlement homeowners to exercise our right to remove Board members
-            (ORS 94.640(6), Bylaws §4.6). 59 owners can call a recall meeting, and 98 votes remove a director.
+            Organizing Oak&nbsp;Hill&nbsp;Settlement homeowners to remove Board members using the procedure in
+            ORS&nbsp;94.640(6) and Bylaws&nbsp;§4.6. 59 owners can call a recall meeting, and 98 votes remove a director.
           </p>
         </div>
 
@@ -83,7 +83,7 @@ export default function Home() {
               Why We're Here
             </h3>
             <p className="text-primary-800 dark:text-stone-200 leading-relaxed mb-4">
-              Oak Hill Settlement homeowners deserve accountability, transparency, and
+              Oak&nbsp;Hill&nbsp;Settlement homeowners deserve accountability, transparency, and
               governance that respects Oregon law and our governing documents.
             </p>
             <p className="text-primary-800 dark:text-stone-200 leading-relaxed mb-4">
@@ -93,9 +93,9 @@ export default function Home() {
             </p>
             <p className="text-primary-800 dark:text-stone-200 leading-relaxed">
               This campaign is gathering signatures from 30% of owners (59 of 194 lots) to
-              require a special meeting (Bylaws §3.4), and proxies toward the 98 votes needed
-              to remove a director (Bylaws §4.6)—exercising our legal right to hold Board
-              members accountable through democratic process.
+              require a special meeting (Bylaws&nbsp;§3.4), and proxies toward the 98 votes needed
+              to remove a director (Bylaws&nbsp;§4.6). That's the procedure the Bylaws and Oregon law
+              provide for holding a Board accountable.
             </p>
           </section>
 
@@ -111,14 +111,14 @@ export default function Home() {
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
                 <span className="text-primary-800 dark:text-stone-200">
                   <a href="/petition#stage" className="font-bold underline hover:text-primary-900 dark:hover:text-white">Sign the petition</a> - 59 owners (30%) are needed to call a
-                  recall meeting (Bylaws §3.4)
+                  recall meeting (Bylaws&nbsp;§3.4)
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
                 <span className="text-primary-800 dark:text-stone-200">
-                  <strong>Challenge defective notices</strong> - Demand proper CC&R citations
-                  and appeal rights
+                  <strong>Read your notices closely</strong> - Ask which CC&R section they rely
+                  on, and whether they give you 14 days to request a hearing (Bylaws&nbsp;§4.15(a))
                 </span>
               </li>
               <li className="flex items-start">
@@ -149,7 +149,7 @@ export default function Home() {
                 href="https://owners.oakhillsettlement.homes/rights#stage"
                 className="text-sm text-primary-700 dark:text-primary-400 hover:text-primary-900 dark:hover:text-primary-300 underline font-medium"
               >
-                → Read the full Homeowner Rights Guide
+                → Read the Owner Guide
               </a>
             </div>
           </section>
@@ -163,8 +163,8 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-3xl font-bold mb-4 dark:text-stone-100">Take Action in 30 Seconds</h3>
             <p className="text-primary-50 dark:text-stone-200 mb-6 text-lg">
-              Exercise your legal right under ORS 94.640(6). It takes 59 owners to call a
-              recall meeting and 98 votes to remove a director. Add your name to hold the Board accountable.
+              ORS&nbsp;94.640(6) and Bylaws&nbsp;§4.6 let owners remove directors. It takes 59 owners to
+              call a recall meeting and 98 votes to remove a director. Add your name.
             </p>
             <a
               href="/petition#stage"
@@ -184,7 +184,7 @@ export default function Home() {
             >
               Visit the main community hub
             </a>{" "}
-            for documents, AI assistant, and homeowner rights resources including the full recall process guide.
+            for documents, the AI assistant, and the Owner Guide.
           </p>
           <p className="text-xs italic">
             Independent community websites • Not affiliated with HOA Board or property management

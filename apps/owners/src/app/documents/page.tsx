@@ -7,7 +7,7 @@ import { SHOW_CHAT, SHOW_RECALL_BANNER } from "@/lib/features";
 
 export const metadata: Metadata = {
   title: "HOA Documents - Oak Hill Settlement",
-  description: "Access HOA governing documents, CC&Rs, bylaws, and meeting minutes",
+  description: "Oak Hill Settlement CC&Rs, Bylaws, resolutions, budgets and financial statements, OCR'd and searchable",
 };
 
 interface DocumentFile {
@@ -57,8 +57,8 @@ const documents: DocumentCategory[] = [
     category: "Resolutions & Policies",
     files: [
       {
-        title: "Fine & Enforcement Policy",
-        description: "HOA enforcement procedures and fine schedule",
+        title: "Resolution #2012-001: Rules Enforcement and Fine Structure",
+        description: "Board resolution setting the notice, hearing and fine procedure ($75, $150, then $250 every 14 days)",
         filename: "resolutions/Signed Fine & Enforcement 11-12-12.pdf",
         date: "Signed: November 12, 2012",
         size: "PDF",
@@ -116,10 +116,10 @@ const documents: DocumentCategory[] = [
         size: "PDF",
       },
       {
-        title: "Recent Balance Sheet",
-        description: "Current financial position statement",
+        title: "December 2023 Balance Sheet",
+        description: "Year-end balance sheet for 2023",
         filename: "balance_sheets/Dec Short.pdf",
-        date: "Recent",
+        date: "December 2023",
         size: "PDF",
       },
     ],
@@ -131,8 +131,8 @@ const documents: DocumentCategory[] = [
         title: "ORS Chapter 94 - Planned Communities",
         description: "Oregon state law governing HOAs and planned communities",
         filename: "ors-94.pdf",
-        date: "2024 Edition",
-        size: "1.8 MB",
+        date: "2025 Edition",
+        size: "Web",
         external: true,
         target: "_ors94",
         url: "https://www.oregonlegislature.gov/bills_laws/ors/ors094.html",
@@ -153,10 +153,10 @@ export default function DocumentsPage() {
             <div>
               <h1 className="text-3xl md:text-2xl font-bold text-primary-900 dark:text-stone-100 group-hover:text-primary-700 dark:group-hover:text-stone-300 transition-colors">
                 <span className="block text-sm font-normal text-primary-700 dark:text-stone-300 group-hover:text-primary-600 dark:group-hover:text-stone-400 transition-colors">Homeowners of</span>
-                Oak Hill Settlement
+                Oak&nbsp;Hill&nbsp;Settlement
               </h1>
               <p className="text-sm text-primary-700 dark:text-stone-300">
-                Forest Grove, Oregon • Community Documents
+                Forest&nbsp;Grove, Oregon • Community Documents
               </p>
             </div>
           </a>
@@ -182,7 +182,7 @@ export default function DocumentsPage() {
                 <svg className="w-8 h-8 md:w-5 md:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                 </svg>
-                Your Rights
+                Owner Guide
               </a>
             </li>
             <li>
@@ -222,8 +222,8 @@ export default function DocumentsPage() {
             Community Documents
           </h2>
           <p className="text-lg text-primary-800 dark:text-stone-200 max-w-3xl mb-3">
-            Independent archive of Oak Hill Settlement governing documents, meeting minutes,
-            and Oregon state law references. Documents mirror what's available in the Frontsteps
+            Independent archive of Oak&nbsp;Hill&nbsp;Settlement governing documents, resolutions,
+            budgets and financial statements, with a link to the Oregon statute. Documents mirror what's available in the Frontsteps
             homeowner dashboard, with the addition of OCR processing for accessibility.
           </p>
           <p className="text-sm text-primary-700 dark:text-stone-400 italic max-w-[64ch]">
@@ -308,7 +308,7 @@ export default function DocumentsPage() {
             📋 ARC Request Form (Fillable PDF)
           </h3>
           <p className="text-primary-800 dark:text-stone-200 mb-4">
-            Preview and download the fillable Architectural Review Committee application form.
+            Preview and download the fillable Architectural Review&nbsp;Committee application form.
             You can fill this out digitally or print and complete by hand.
           </p>
           <div className="bg-white dark:bg-stone-950/70 border border-primary-200 dark:border-stone-800 rounded-xl overflow-hidden shadow-lg">
@@ -359,8 +359,8 @@ export default function DocumentsPage() {
                 Need Help Understanding These Documents?
               </h3>
               <p className="text-primary-50 dark:text-stone-200 mb-6">
-                Our community AI assistant is trained on Oregon HOA law (ORS 94) and Oak Hill
-                Settlement governing documents. Ask questions in plain English and get informed!
+                The community AI assistant searches these documents and ORS&nbsp;94 and answers in
+                plain English. It can be wrong, so check the section it cites.
               </p>
               <a
                 href="/chat#stage"

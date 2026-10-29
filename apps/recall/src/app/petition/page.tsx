@@ -28,10 +28,10 @@ export default function PetitionPage() {
             <div>
               <h1 className="text-3xl md:text-2xl font-bold text-primary-900 dark:text-stone-100 group-hover:text-primary-700 dark:group-hover:text-stone-300 transition-colors">
                 <span className="block text-sm font-normal text-primary-700 dark:text-stone-300">Homeowners of</span>
-                Oak Hill Settlement
+                Oak&nbsp;Hill&nbsp;Settlement
               </h1>
               <p className="text-sm text-primary-700 dark:text-stone-300">
-                Forest Grove, Oregon • Recall Petition
+                Forest&nbsp;Grove, Oregon • Recall Petition
               </p>
             </div>
           </a>
@@ -69,7 +69,7 @@ export default function PetitionPage() {
                 <svg className="w-8 h-8 md:w-5 md:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                 </svg>
-                Your Rights
+                Owner Guide
               </a>
             </li>
           </ul>
@@ -84,7 +84,7 @@ export default function PetitionPage() {
             Take Action in 30 Seconds
           </h2>
           <p className="text-lg text-primary-800 dark:text-stone-200">
-            Sign the recall petition and authorize your proxy vote.
+            Add your name to the petition and pledge your proxy for the vote.
             <br />
             <span className="text-primary-600 dark:text-primary-400 font-medium">
               59 owners call the meeting. 98 votes remove a director.
@@ -105,19 +105,23 @@ export default function PetitionPage() {
           <ul className="text-sm text-primary-800 dark:text-stone-200 space-y-2 max-w-md mx-auto text-left">
             <li className="flex items-start gap-2">
               <span className="text-primary-600 dark:text-primary-400">•</span>
-              <span>Oregon law (ORS 94.640(6)) and our Bylaws (§4.6) let homeowners remove Board members</span>
+              <span>Oregon law (ORS&nbsp;94.640(6)) and our Bylaws (§4.6) let homeowners remove Board members</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary-600 dark:text-primary-400">•</span>
-              <span>Signatures from 30% of owners (59 lots) require the Board to call a special meeting (Bylaws §3.4)</span>
+              <span>Signatures from 30% of owners (59 lots) require the Board to call a special meeting (Bylaws&nbsp;§3.4)</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary-600 dark:text-primary-400">•</span>
-              <span>If the Board doesn't send notice within 30 days, a signer can call the meeting (ORS 94.650(3))</span>
+              <span>If the Board doesn't send notice within 30 days, a signer can call the meeting (ORS&nbsp;94.650(3))</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary-600 dark:text-primary-400">•</span>
-              <span>Removal takes 98 of 194 votes, cast in person, by absentee ballot, or by proxy (Bylaws §3.10, §4.6)</span>
+              <span>Removal takes 98 of 194 votes, cast in person, by absentee ballot, or by proxy (Bylaws&nbsp;§3.10, §4.6)</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary-600 dark:text-primary-400">•</span>
+              <span>A proxy has to be dated and signed by the owner (Bylaws&nbsp;§3.10; ORS&nbsp;94.660(2)), so this form puts you on the list and organizers will bring you a one-page proxy form to sign before the meeting</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary-600 dark:text-primary-400">•</span>
@@ -135,7 +139,7 @@ export default function PetitionPage() {
             >
               Visit the community hub
             </a>{" "}
-            for documents, AI assistant, and your rights guide.
+            for documents, the AI assistant, and the Owner Guide.
           </p>
           <p className="text-xs italic mt-8">
             Independent homeowner effort • Not affiliated with HOA Board or property management

@@ -17,10 +17,10 @@ export default function Home() {
             <div>
               <h1 className="text-3xl md:text-2xl font-bold text-primary-900 dark:text-stone-100">
                 <span className="block text-sm font-normal text-primary-700 dark:text-stone-300">Homeowners of</span>
-                Oak Hill Settlement
+                Oak&nbsp;Hill&nbsp;Settlement
               </h1>
               <p className="text-sm text-primary-700 dark:text-stone-300">
-                Forest Grove, Oregon • Community Hub
+                Forest&nbsp;Grove, Oregon • Community Hub
               </p>
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function Home() {
                 <svg className="w-8 h-8 md:w-5 md:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                 </svg>
-                Your Rights
+                Owner Guide
               </a>
             </li>
             <li>
@@ -83,10 +83,10 @@ export default function Home() {
       <main id="stage" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-extrabold text-primary-900 dark:text-white mb-4">
-            Oak Hill Settlement<br />Homeowner's Community Portal
+            Oak&nbsp;Hill&nbsp;Settlement<br />Homeowner's Community Portal
           </h2>
           <p className="text-xl text-primary-800 dark:text-stone-200 max-w-3xl mx-auto">
-            An independent community hub for Oak Hill Settlement homeowners in Forest&nbsp;Grove, Oregon.
+            An independent community hub for Oak&nbsp;Hill&nbsp;Settlement homeowners in Forest&nbsp;Grove, Oregon.
             By homeowners, for homeowners.
           </p>
         </div>
@@ -101,8 +101,8 @@ export default function Home() {
               About This Hub
             </h3>
             <p className="text-primary-800 dark:text-stone-200 leading-relaxed mb-4">
-              This is an independent, community-driven platform created by Oak Hill Settlement
-              homeowners. We're not affiliated with the HOA Board of Directors or property
+              This is an independent, community-driven platform created by Oak&nbsp;Hill&nbsp;Settlement
+              homeowners. We're not affiliated with the HOA Board of&nbsp;Directors or property
               management company.
             </p>
             <p className="text-primary-800 dark:text-stone-200 leading-relaxed">
@@ -125,7 +125,7 @@ export default function Home() {
                   href="/rights#stage"
                   className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium"
                 >
-                  Summary of your rights
+                  Owner guide to the CC&Rs, Bylaws and ORS&nbsp;94
                 </a>
               </li>
               <li className="flex items-start">
@@ -144,7 +144,7 @@ export default function Home() {
                     href="/chat#stage"
                     className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium"
                   >
-                    AI chat assistant trained on Oregon law and governing documents
+                    AI assistant that searches the governing documents and ORS&nbsp;94
                   </a>
                 </li>
               )}
@@ -181,7 +181,7 @@ export default function Home() {
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
                 <a href="/rights#stage" className="text-primary-800 dark:text-stone-200 hover:text-primary-900 dark:hover:text-white underline font-medium">
-                  Know Your Rights under ORS 94
+                  What ORS&nbsp;94 and the governing documents say
                 </a>
               </li>
               <li className="flex items-start">
@@ -210,7 +210,7 @@ export default function Home() {
                 href="/rights#stage"
                 className="w-full sm:w-auto text-center text-sm bg-primary-600 hover:bg-primary-700 dark:bg-primary-700 dark:hover:bg-primary-800 border-2 border-primary-600 hover:border-primary-700 dark:border-primary-700 dark:hover:border-primary-800 text-white font-semibold px-4 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
               >
-                Know Your Rights
+                Read the Owner Guide
               </a>
               <a
                 href="/documents#stage"
@@ -233,7 +233,7 @@ export default function Home() {
               📋 ARC Resources
             </h3>
             <p className="text-primary-800 dark:text-stone-200 mb-6 text-sm">
-              Tools and guidance for your Architectural Review Committee submission
+              Tools and guidance for your Architectural Review&nbsp;Committee submission
             </p>
 
             <div className="space-y-4">
@@ -287,7 +287,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-3xl font-bold mb-4 dark:text-stone-100">Join the Community</h3>
             <p className="text-primary-50 dark:text-stone-200 mb-6 text-lg">
-              Connect with your neighbors, share information, and stay informed about what's happening in Oak Hill Settlement.
+              Connect with your neighbors, share information, and stay informed about what's happening in Oak&nbsp;Hill&nbsp;Settlement.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
@@ -297,7 +297,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-block bg-white dark:bg-primary-700 text-primary-700 dark:text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-primary-900 hover:shadow-lg dark:hover:bg-primary-800 dark:hover:text-white focus:outline-none focus:ring-4 focus:ring-white/50 dark:focus:ring-primary-400/50 focus:bg-white focus:text-primary-900 dark:focus:bg-primary-800 dark:focus:text-white transition-all shadow-md"
               >
-                Join Oak Hill on Nextdoor
+                Join Oak&nbsp;Hill on Nextdoor
               </a>
             </div>
             
