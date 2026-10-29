@@ -104,24 +104,27 @@ export default function RightsPage() {
             ⚖️ Critical Historical Context
           </h3>
           <p className="text-primary-50 dark:text-stone-200 ml-0 mb-4 max-w-none">
-            In 2011, a federal court looked at Oak Hill Settlement's governing documents and found something important (See <em>Mendoza v. Columbia Collectors/ VF Law</em>, D. Or., 2011):
-          </p>
-          <p className="text-primary-50 dark:text-stone-200 ml-0 mb-4 pl-4 border-l-2 border-primary-400 dark:border-stone-400 max-w-none">
-            <strong>Our CC&Rs did not contain a valid fining system</strong>, and the HOA's attorney at the time (VF Law—the same firm used today) <strong>violated federal law</strong> when trying to collect those fines.
-          </p>
-          <p className="text-primary-50 dark:text-stone-200 ml-0 mb-4 max-w-none">
-            After that ruling, the Board created a 2012 "Fine & Enforcement Declaration."
-          </p>
-          <p className="text-primary-50 dark:text-stone-200 ml-0 mb-3 max-w-none">
-            However:
+            VF Law, the firm the HOA uses today, has been collecting from Oak Hill homeowners since at least 2009, and one of those homeowners took it to federal court (See <em>Porras v. Vial Fotheringham LLP</em>, No. 3:13-cv-00699-BR, D. Or., May 2015):
           </p>
           <ul className="list-disc list-inside text-primary-50 dark:text-stone-200 mb-4 space-y-2 pl-4">
-            <li>Homeowners were never given a vote on this new fining system</li>
-            <li>The declaration was not adopted as a proper CCR amendment</li>
-            <li>The CC&Rs themselves have never been updated to include fine authority</li>
+            <li>In December 2010, VF Law sued an Oak Hill homeowner in Washington County Circuit Court over unpaid assessments. He didn't respond and lost by default in May 2011, but the court still cut VF Law's requested attorney fees from $1,281.48 to $750.</li>
+            <li>The homeowner then sued VF Law in federal court under the Fair Debt Collection Practices Act (FDCPA).</li>
+            <li>The federal court held that <strong>HOA assessments and the fees and costs VF Law adds to them are "debts" under the FDCPA</strong>, so federal debt-collection rules apply when VF Law collects from Oak Hill owners.</li>
+            <li>The court also noted there was <strong>no evidence homeowners were ever given notice</strong> of the HOA's 2009 Collection Resolution.</li>
+          </ul>
+          <p className="text-primary-50 dark:text-stone-200 ml-0 mb-4 max-w-none">
+            In 2012 the Board adopted a new Collection Resolution and a Rules Enforcement and Fine Structure Resolution (#2012-001). Both are on the <a href="/documents" className="underline">Documents</a> page.
+          </p>
+          <p className="text-primary-50 dark:text-stone-200 ml-0 mb-3 max-w-none">
+            What that means for fines today:
+          </p>
+          <ul className="list-disc list-inside text-primary-50 dark:text-stone-200 mb-4 space-y-2 pl-4">
+            <li>CC&R §4.25 allows fines only after reasonable notice and a reasonable opportunity for a hearing</li>
+            <li>Under ORS 94.630(1)(n), a fine must be based on a schedule or resolution that was <strong>delivered to each lot</strong>. You can ask the HOA to show it was delivered to yours.</li>
+            <li>Owners can overrule a Board rule with 75% of the votes at a properly noticed meeting (Bylaws §4.7(l))</li>
           </ul>
           <p className="text-primary-50 dark:text-stone-200 ml-0 font-semibold max-w-none">
-            Because the membership never approved this change, the 2012&nbsp;Declaration may not be legally enforceable. 
+            The court did not rule on whether Oak Hill can fine owners for rule violations. Its lesson is that the HOA and VF Law must follow the rules on notice and procedure, and that federal law applies when they collect.
           </p>
         </div>
 
@@ -399,8 +402,8 @@ export default function RightsPage() {
               <li className="flex items-start">
                 <span className="text-red-600 dark:text-red-400 mr-2">⚠</span>
                 <span className="text-primary-800 dark:text-stone-200">
-                  References the 2012 "Fine & Enforcement Declaration" for fines{" "}
-                  <span className="text-sm italic">(unvoted, potentially unenforceable)</span>
+                  Threatens fines under Resolution #2012-001{" "}
+                  <span className="text-sm italic">(without stating the fine, or showing the resolution was delivered to your lot)</span>
                 </span>
               </li>
               <li className="flex items-start">

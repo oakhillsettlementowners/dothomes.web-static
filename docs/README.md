@@ -6,7 +6,7 @@ This folder contains shared context and knowledge that informs both subdomain we
 
 ### `ai-context.md`
 Comprehensive homeowner rights and governance guide including:
-- Historical context (2011 federal case)
+- Historical context (Porras v. Vial Fotheringham, D. Or. 2015)
 - Governance hierarchy
 - Board limitations under Oregon law
 - Documented patterns of procedural defects
@@ -30,7 +30,7 @@ Both apps can reference this context in their AI configurations:
 ```
 
 Context includes:
-- 2011 federal case details
+- Porras federal case details
 - VF Law's history
 - 2012 Fine Declaration (unvoted)
 - Procedural defect patterns
@@ -109,7 +109,7 @@ Both sites reference the same factual foundation but serve different purposes:
 ## ⚖️ Legal Considerations
 
 This context is:
-- ✅ Based on public court records (2011 federal case)
+- ✅ Based on public court records (Porras v. Vial Fotheringham, D. Or. 2015)
 - ✅ Based on Oregon Revised Statutes (ORS 94)
 - ✅ Based on publicly available HOA documents
 - ✅ Factual and verifiable

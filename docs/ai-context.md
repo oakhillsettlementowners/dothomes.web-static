@@ -15,7 +15,7 @@ Welcome to Oak Hill Settlement. Whether you are new to the community or simply s
 	•	Historic patterns of overreach
 	•	Procedural requirements the Board must follow
 	•	Why many notices and violation letters have been defective
-	•	A brief history of VF Law’s involvement and the federal judgment that shaped our current governing documents
+	•	A brief history of VF Law’s involvement, including the Porras federal case
 
 This is a neutral, informational resource intended to help homeowners understand their rights and confidently navigate HOA communications.
 
@@ -36,33 +36,33 @@ Board-created “Declarations” or “Resolutions” only hold legal power if:
 	•	Adopted in accordance with ORS 94 (Oregon Planned Community Act)
 
 Many homeowners don’t realize that not everything the Board publishes is actually enforceable.
-This fact was tested—successfully—once before.
 
 ⸻
 
 ⚖️ 2. The VF Law Federal Case (Historical Context)
 
-In 2011, a federal court looked at Oak Hill Settlement's governing documents and found something important (See Mendoza v. Columbia Collectors/ VF Law, D. Or., 2011):
+VF Law (formerly Vial Fotheringham), the firm the HOA uses today, has been collecting from Oak Hill homeowners since at least 2009. One of those homeowners took it to federal court: Porras v. Vial Fotheringham LLP, No. 3:13-cv-00699-BR (D. Or., Opinion and Order, May 2015).
 
-Our CC&Rs did not contain a valid fining system, and the HOA's attorney at the time (VF Law—the same firm used today) violated federal law when trying to collect those fines.
+What the opinion records:
+	•	In December 2010, VF Law sued an Oak Hill homeowner in Washington County Circuit Court over unpaid assessments. He didn't respond and lost by default in May 2011, but the court cut VF Law's requested attorney fees from $1,281.48 to $750.
+	•	The homeowner then sued VF Law under the federal Fair Debt Collection Practices Act (FDCPA).
+	•	The federal court held that HOA assessments, and the late fees, attorney fees, and collection costs VF Law adds to them, are "debts" under the FDCPA. Federal debt-collection rules apply when VF Law collects from Oak Hill owners.
+	•	The court noted there was no evidence in the record that homeowners were given notice of the HOA's 2009 Collection Resolution.
 
-After that ruling, the Board created a 2012 "Fine & Enforcement Declaration."
+What the case does not say:
+	•	It did not rule that Oak Hill's CC&Rs lack a fining mechanism.
+	•	The 2015 opinion did not find that VF Law violated the FDCPA.
+	•	It did not address fines for rule or architectural violations.
 
-However:
-	•	Homeowners were never given a vote on this new fining system,
-	•	It was not adopted as a proper CCR amendment, and
-	•	The CC&Rs themselves have never been updated to include fine authority.
+(Earlier versions of this guide cited "Mendoza v. Columbia Collectors/ VF Law, D. Or., 2011." No such case could be found in public court records, and it should not be cited.)
 
-Critical point:
+In 2012 the Board adopted a new Collection Resolution and the Rules Enforcement and Fine Structure Resolution #2012-001. Both are on the Documents page. #2012-001 is a Board resolution, not a CC&R amendment:
+	•	CC&R §4.25 allows fines only after reasonable notice and a reasonable opportunity for a hearing
+	•	Bylaws §4.15(f) lets the Board adopt enforcement policies by resolution, without an owner vote
+	•	ORS 94.630(1)(n) requires a fine to be based on a schedule or resolution delivered to each lot, so owners can ask for proof of delivery
+	•	Bylaws §4.7(l) lets owners overrule a Board rule with 75% of the votes at a properly noticed meeting
 
-Because the membership never approved this change, the 2012 Declaration may not be legally enforceable. So if the HOA tries to issue fines or penalties based on that document, it may be acting beyond its actual authority under both the CC&Rs and Oregon law.
-
-The federal case remains highly relevant because:
-	•	VF Law represented the HOA then and continues representing them today
-	•	The underlying CCRs have never been amended by a vote of the membership to authorize fines
-	•	Many recent violation notices reference this same 2012 "Declaration"
-
-Understanding this history is essential when evaluating any claim about fines or threats of legal action.
+The case remains relevant because VF Law still represents the HOA, federal debt-collection law applies to what it collects, and the HOA's notice and procedure obligations are where enforcement most often goes wrong.
 
 ⸻
 
@@ -219,7 +219,7 @@ Without referencing any private homeowner situation, here are the general recurr
 	•	Treating guidelines as if they were binding law
 	•	Failing to follow required notice or appeal timelines
 	•	Citing incorrect CCR clauses
-	•	Improper fines or threats referencing non-voted “Declarations”
+	•	Fine threats that don’t state the fine or show the resolution was delivered to the lot
 	•	Using personal opinions (“we don’t want this in the community”) instead of CCR text
 	•	Issuing enforcement based on hypothetical future scenarios
 	•	Failure to properly document Board decisions
