@@ -177,8 +177,9 @@ export default function ARCAssistant() {
               <li>• Save all written responses (or note the lack thereof)</li>
               <li>• Working days exclude weekends</li>
               <li>
-                • Routine maintenance (painting, repairs) does NOT require ARC approval (CC&R
-                §4.2)
+                • Repairs, and repainting in your current color or a pre-approved color, do NOT
+                require ARC approval (CC&R §4.2; 2014 Architectural Standard). Other color
+                changes do (CC&R §4.3(e)).
               </li>
             </ul>
           </div>
