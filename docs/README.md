@@ -32,7 +32,7 @@ Both apps can reference this context in their AI configurations:
 Context includes:
 - Porras federal case details
 - VF Law's history
-- 2012 Fine Declaration (unvoted)
+- 2012 Fine Resolution (#2012-001, Board-adopted)
 - Procedural defect patterns
 - Homeowner rights under ORS 94
 
