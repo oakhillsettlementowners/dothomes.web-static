@@ -335,7 +335,7 @@ export default function RightsPage() {
           {/* Board Recall Rights */}
           <section className="bg-primary-100 dark:bg-primary-950/30 border border-primary-300 dark:border-stone-700 rounded-xl shadow-lg p-8">
             <h3 className="text-2xl font-bold text-primary-900 dark:text-stone-100 mb-4">
-              🗳️ Board Recall Rights (ORS 94.640(7))
+              🗳️ Board Recall Rights (ORS 94.640(6), Bylaws §4.6)
             </h3>
             <div className="space-y-3 text-primary-800 dark:text-stone-200">
               <p className="font-semibold text-lg">
@@ -344,24 +344,34 @@ export default function RightsPage() {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
-                  <span>Only <strong>10% of owners</strong> needed to petition for removal vote</span>
+                  <span><strong>30% of owners (59 lots)</strong> can require the Board to call a special meeting (Bylaws §3.4)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
-                  <span>
-                    Recall meeting has <strong>NO QUORUM REQUIREMENT</strong>
-                  </span>
+                  <span>If the Board doesn't send notice within 30 days, an owner who signed the request can call the meeting (ORS 94.650(3))</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
-                  <span>Removed director's seat becomes immediately vacant</span>
+                  <span>Quorum is 20% (39 lots), present in person or by proxy (Bylaws §3.6)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
+                  <span>Removal takes a majority of <strong>all</strong> votes, <strong>98 of 194</strong>, cast in person, by absentee ballot, or by proxy (Bylaws §3.10, §4.6)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
+                  <span>Removal must be on the meeting notice, each director gets a chance to be heard, and each is voted on separately (ORS 94.640(6)(b))</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
+                  <span>A removed director serves until owners elect a replacement (ORS 94.640(6)(c), (7))</span>
                 </li>
               </ul>
               <p className="mt-4 text-sm italic">
                 This check-and-balance exists precisely to prevent abuse of HOA authority.
               </p>
               <p className="mt-4 text-xs text-primary-700 dark:text-stone-400">
-                Note: ORS 94 is Oregon state law and overrides any conflicting provisions in the CC&Rs or Bylaws.
+                Note: for recalls, Oregon law lets the Bylaws set the numbers, within limits. For example, the share of owners needed to call a meeting must be between 10% and 50% (ORS 94.650(2)(a)).
               </p>
             </div>
           </section>

@@ -186,10 +186,13 @@ You have rights:
 
 You also have the right to remove Board members.
 
-Under ORS 94.640(7):
-	•	Only 10% of owners can petition for a removal vote
-	•	The recall meeting has no quorum requirement
-	•	A removed director’s seat becomes immediately vacant
+Under ORS 94.640(6), ORS 94.650, and our Bylaws (194 lots, one vote each):
+	•	Owners holding 30% of the votes (59 lots) can require a special meeting (Bylaws §3.4)
+	•	If the Board doesn’t give notice within 30 days, an owner who signed can call the meeting (ORS 94.650(3))
+	•	Quorum is 20% (39 lots), in person or by proxy (Bylaws §3.6)
+	•	Removal takes a majority of all votes, 98 of 194, cast in person, by absentee ballot, or by proxy (Bylaws §3.10, §4.6)
+	•	Removal must be on the meeting notice, and each director gets a chance to be heard and a separate vote (ORS 94.640(6)(b))
+	•	A removed director serves until owners elect a successor (ORS 94.640(6)(c), (7))
 
 This is a check-and-balance that exists precisely to prevent abuse or misunderstanding of HOA authority.
 

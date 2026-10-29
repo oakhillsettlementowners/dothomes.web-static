@@ -32,9 +32,9 @@ You want zero visibility into your vote count until the moment it matters.
 
 ⸻
 
-2. Oregon recall statute has NO quorum requirement (ORS 94.640(7))
+2. Removal needs 98 of 194 votes (Bylaws §4.6)
 
-This means the recall meeting becomes a numbers game at the moment of the vote.
+It takes a majority of all votes entitled to be cast, not just a majority of those present, so the result depends on proxies and absentee ballots gathered before the meeting. Proxies must be written, signed, dated, and filed with the secretary by the start of the meeting, and they expire after one year (Bylaws §3.10).
 
 If you give the Board an early count, you lose the element of surprise.
 

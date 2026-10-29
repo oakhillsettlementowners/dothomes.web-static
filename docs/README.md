@@ -44,7 +44,7 @@ import { hoaContext } from '@oakhillsettlement/config';
 
 // Access specific information
 const recallInfo = hoaContext.homeownerRights.ors94Protections.boardRecall;
-// { statute: "ORS 94.640(7)", petitionThreshold: "10% of owners", ... }
+// { statute: "ORS 94.640(6); Bylaws §§3.4, 3.6, 4.6", petitionThreshold: "30% of owners (59 lots)", ... }
 ```
 
 ### 3. Direct Pages

@@ -68,8 +68,8 @@ export default function Home() {
             Recall the Board
           </h2>
           <p className="text-xl text-primary-800 dark:text-stone-200 max-w-3xl mx-auto">
-            Organizing Oak Hill Settlement homeowners to exercise our recall rights under ORS 94.640(7). 
-            Only 10% of owners needed to initiate a recall vote.
+            Organizing Oak Hill Settlement homeowners to exercise our right to remove Board members
+            (ORS 94.640(6), Bylaws §4.6). 59 owners can call a recall meeting, and 98 votes remove a director.
           </p>
         </div>
 
@@ -92,9 +92,10 @@ export default function Home() {
               and hold leadership accountable.
             </p>
             <p className="text-primary-800 dark:text-stone-200 leading-relaxed">
-              This campaign focuses on organizing the required 10% of homeowners to petition 
-              for a recall vote under ORS 94.640(7)—exercising our legal right to hold 
-              Board members accountable through democratic process.
+              This campaign is gathering signatures from 30% of owners (59 of 194 lots) to
+              require a special meeting (Bylaws §3.4), and proxies toward the 98 votes needed
+              to remove a director (Bylaws §4.6)—exercising our legal right to hold Board
+              members accountable through democratic process.
             </p>
           </section>
 
@@ -109,8 +110,8 @@ export default function Home() {
               <li className="flex items-start">
                 <span className="text-primary-600 dark:text-primary-400 mr-2 text-xl">•</span>
                 <span className="text-primary-800 dark:text-stone-200">
-                  <a href="/petition#stage" className="font-bold underline hover:text-primary-900 dark:hover:text-white">Sign the petition</a> - We need 10% of owners to initiate a 
-                  recall vote (ORS 94.640)
+                  <a href="/petition#stage" className="font-bold underline hover:text-primary-900 dark:hover:text-white">Sign the petition</a> - 59 owners (30%) are needed to call a
+                  recall meeting (Bylaws §3.4)
                 </span>
               </li>
               <li className="flex items-start">
@@ -162,8 +163,8 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-3xl font-bold mb-4 dark:text-stone-100">Take Action in 30 Seconds</h3>
             <p className="text-primary-50 dark:text-stone-200 mb-6 text-lg">
-              Exercise your legal right under ORS 94.640(7). We need 10% of homeowners to 
-              petition for a recall vote. Add your name to hold the Board accountable.
+              Exercise your legal right under ORS 94.640(6). It takes 59 owners to call a
+              recall meeting and 98 votes to remove a director. Add your name to hold the Board accountable.
             </p>
             <a
               href="/petition#stage"

@@ -61,10 +61,11 @@ export const hoaContext = {
   homeownerRights: {
     ors94Protections: {
       boardRecall: {
-        statute: "ORS 94.640(7)",
-        petitionThreshold: "10% of owners",
-        quorumRequired: false,
-        effect: "Removed director's seat becomes immediately vacant",
+        statute: "ORS 94.640(6); Bylaws §§3.4, 3.6, 4.6",
+        petitionThreshold: "30% of owners (59 lots)",
+        quorumRequired: "20% of votes (39 lots)",
+        removalVote: "Majority of all votes (98 of 194)",
+        effect: "Removed director serves until owners elect a successor",
       },
       arcTimeline: {
         statute: "CC&R §6.5",
