@@ -97,7 +97,7 @@ Key ORS 94 Points & Oak Hill Settlement Specifics:
 BOARD RECALL RIGHTS (ORS 94.640(6), ORS 94.650, Bylaws §§3.4, 3.6, 3.10, 4.6). Oak Hill has 194 lots with one vote each:
 - Calling the meeting: owners holding 30% of the votes (59 lots) can require the Board to call a special meeting (Bylaws §3.4). ORS 94.650(2)(a) lets bylaws set this anywhere from 10% to 50%; 10% is the legal floor, not Oak Hill's number.
 - If the Board doesn't give notice within 30 days of receiving the request, an owner who signed it can set the meeting and give notice (ORS 94.650(3)).
-- Quorum: 20% of votes (39 lots), present in person or by proxy (Bylaws §3.6). If the meeting can't organize for lack of quorum, it can be adjourned, and the adjourned meeting's quorum drops to 10% (20 lots).
+- Quorum: 20% of votes (39 lots), present in person or by proxy (Bylaws §3.6). If the meeting can't organize for lack of quorum, it can be adjourned. Bylaws §3.6 says the adjourned meeting's quorum drops to 10%, but ORS 94.655(3) sets the floor at 20% of all votes and Bylaws §8.5 says the statute controls, so the quorum stays at 39 lots. Never say the adjourned meeting needs only 20 lots.
 - Removal vote: a majority of the number of votes entitled to be cast, which is 98 of 194, not a majority of those present (Bylaws §4.6).
 - Votes may be cast in person, by absentee ballot, or by proxy. Proxies must be written, signed, dated, and filed with the secretary by the start of the meeting, and they expire after one year (Bylaws §3.10).
 - Removal must happen at a meeting; a mail-in written ballot can't replace it (ORS 94.647(1)(c)).
@@ -109,7 +109,7 @@ BOARD RECALL RIGHTS (ORS 94.640(6), ORS 94.650, Bylaws §§3.4, 3.6, 3.10, 4.6).
 MEETING & NOTICE REQUIREMENTS (ORS 94.640):
 - Homeowners have right to attend board meetings
 - Board meetings must be properly noticed and conducted
-- Special assessments require proper notice and voting (ORS 94.570)
+- Special assessments: the Board alone can levy them to cover an operating deficit, collect what an owner owes for a breach, or make Common Area repairs (CC&R §10.6(a)–(c)). Capital acquisitions, additions, or improvements need approval by 51% of all votes allocated to the Lots (CC&R §10.6(d)).
 
 ENFORCEMENT PROCEDURES (ORS 94.630 & Oak Hill CCRs):
 - Homeowners have right to hearing and appeal (MANDATORY in notices per Bylaws §4.15(a)(iii))
@@ -124,7 +124,7 @@ ENFORCEMENT PROCEDURES (ORS 94.630 & Oak Hill CCRs):
 - Inconsistent enforcement is not illegal by itself: CC&R §11.3 says failing to enforce is not a waiver, and §6.7 says an ARC approval is not a precedent. The Board and ARC must use their discretion in good faith (Santoro v. Eagle Crest, Or App 2022), and treating similar projects differently can be evidence of bad faith.
 
 DOCUMENT HIERARCHY & AMENDMENTS:
-- CC&Rs can only be amended with proper homeowner vote (ORS 94.580)
+- CC&Rs can only be amended by the owners, with 75% of the total votes (CC&R §11.6; ORS 94.590 sets 75% as the minimum and lets a declaration require more, not less)
 - Board resolutions cannot amend the CC&Rs or Bylaws, but the Board may adopt rules and enforcement policies the governing documents authorize (CC&R §4.23, Bylaws §4.7(l) and §4.15(f))
 - HOA must maintain financial records and make available (ORS 94.670)
 
