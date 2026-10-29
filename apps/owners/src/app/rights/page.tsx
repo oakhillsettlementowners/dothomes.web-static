@@ -95,6 +95,10 @@ export default function RightsPage() {
                 A comprehensive guide to your rights, Board obligations, and the limits Oregon
                 law places on HOA authority in Oak Hill Settlement.
             </p>
+            <p className="mt-4 border-l-4 border-primary-300 dark:border-stone-600 pl-3 text-sm text-primary-700 dark:text-stone-300">
+                This site is run by homeowners, for homeowners. It's general information, not
+                legal advice. For advice about your situation, talk to an attorney.
+            </p>
           </div>
         </div>
 
