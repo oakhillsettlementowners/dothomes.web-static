@@ -107,7 +107,7 @@ export default function RightsPage() {
             VF Law, the firm the HOA uses today, has been collecting from Oak Hill homeowners since at least 2009, and one of those homeowners took it to federal court (See <em>Porras v. Vial Fotheringham LLP</em>, No. 3:13-cv-00699-BR, D. Or., May 2015):
           </p>
           <ul className="list-disc list-inside text-primary-50 dark:text-stone-200 mb-4 space-y-2 pl-4">
-            <li>In December 2010, VF Law sued an Oak Hill homeowner in Washington County Circuit Court over unpaid assessments. He didn't respond and lost by default in May 2011, but the court still cut VF Law's requested attorney fees from $1,281.48 to $750.</li>
+            <li>In December 2010, VF Law sued an Oak Hill homeowner in Washington County Circuit Court over unpaid assessments. The homeowner didn't respond and lost by default in May 2011, but the court still cut VF Law's requested attorney fees from $1,281.48 to $750.</li>
             <li>The homeowner then sued VF Law in federal court under the Fair Debt Collection Practices Act (FDCPA).</li>
             <li>The federal court held that <strong>HOA assessments and the fees and costs VF Law adds to them are "debts" under the FDCPA</strong>, so federal debt-collection rules apply when VF Law collects from Oak Hill owners.</li>
             <li>The court also noted there was <strong>no evidence homeowners were ever given notice</strong> of the HOA's 2009 Collection Resolution.</li>
@@ -202,25 +202,31 @@ export default function RightsPage() {
                   <li className="flex items-start">
                     <span className="text-red-600 dark:text-red-400 mr-2">•</span>
                     <span className="text-primary-800 dark:text-stone-200">
-                      Invent fines not in CC&Rs
+                      Fine you without procedurally effective written notice and a chance to be
+                      heard, or under a fine schedule that wasn't delivered to your lot (ORS
+                      94.630(1)(n); CC&R §4.25)
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-red-600 dark:text-red-400 mr-2">•</span>
                     <span className="text-primary-800 dark:text-stone-200">
-                      Withhold appeal rights (ORS 94.630)
+                      Fine you without a hearing (ORS 94.630(1)(n); Bylaws §4.15), or refuse a
+                      Board appeal of an ARC decision (CC&R §6.8)
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-red-600 dark:text-red-400 mr-2">•</span>
                     <span className="text-primary-800 dark:text-stone-200">
-                      Require ARC approval for routine maintenance
+                      Require ARC approval for like-for-like repairs, or for repainting in your
+                      current color or a pre-approved color (CC&R §4.2; 2014 Architectural
+                      Standard, items 9–10). Other color changes need approval (§4.3(e)).
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-red-600 dark:text-red-400 mr-2">•</span>
                     <span className="text-primary-800 dark:text-stone-200">
-                      Apply rules inconsistently
+                      Use its discretion arbitrarily or in bad faith (<em>Santoro v. Eagle Crest</em>,
+                      2022). Treating similar projects differently can be evidence of that.
                     </span>
                   </li>
                 </ul>
@@ -260,8 +266,10 @@ export default function RightsPage() {
               </div>
 
               <p className="text-sm italic mt-4 text-primary-700 dark:text-stone-300">
-                Routine maintenance (painting touch-ups, repairs) does NOT require ARC
-                approval at all (CC&R §4.2).
+                Routine maintenance (repairs, touch-ups, repainting in your current color) does NOT
+                require ARC approval (CC&R §4.2). Neither does repainting in one of the
+                Sherwin-Williams colors pre-approved by the 2014 Architectural Standard, as long as
+                the garage door matches the house. Other color changes need approval (CC&R §4.3(e)).
               </p>
             </div>
           </section>
@@ -406,7 +414,8 @@ export default function RightsPage() {
               <li className="flex items-start">
                 <span className="text-red-600 dark:text-red-400 mr-2">⚠</span>
                 <span className="text-primary-800 dark:text-stone-200">
-                  Requires ARC approval for routine maintenance
+                  Requires ARC approval for like-for-like repairs, or for repainting in your
+                  current color or a pre-approved color
                 </span>
               </li>
               <li className="flex items-start">

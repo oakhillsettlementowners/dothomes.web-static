@@ -76,10 +76,11 @@ The case remains relevant because VF Law still represents the HOA, federal debt-
 	•	Levy annual assessments approved by the budget process
 
 ❌ The Board cannot:
-	•	Invent new fines or penalties not present in the CCRs
-	•	Withhold appeal rights (ORS 94.630)
+	•	Fine you without procedurally effective written notice and a chance to be heard, or under a fine schedule that wasn't delivered to your lot (ORS 94.630(1)(n); CCR §4.25). The fine amounts don't have to be in the CCRs; a delivered Board resolution is enough.
+	•	Fine you without a hearing (ORS 94.630(1)(n); Bylaws §4.15), or refuse a Board appeal of an ARC decision (CCR §6.8)
 	•	Ignore procedural deadlines
-	•	Apply rules inconsistently or discriminatorily
+	•	Use its discretion arbitrarily or in bad faith (Santoro v. Eagle Crest, 2022). Treating similar projects differently can be evidence of that, though inconsistency alone isn't a violation: CCR §11.3 says failing to enforce isn't a waiver, and §6.7 says an ARC approval isn't a precedent.
+	•	Discriminate against owners based on a protected class (federal Fair Housing Act)
 	•	Enforce “guidelines” as if they were CCRs
 	•	Treat advisory design preferences as mandatory
 	•	Issue legally binding decisions through email without proper notice or meeting procedure
@@ -144,7 +145,7 @@ They only govern:
 	•	New construction
 	•	Changes in materials, colors, or design
 
-Routine touch-up painting is explicitly within homeowner discretion.
+Touch-ups and repainting in the current color are maintenance, which §4.20 requires owners to do, not construction or exterior alteration under §4.2. The 2014 Architectural Standard (Rev 2.0) also pre-approves repairs that don't change the exterior appearance (item 10) and repainting in listed Sherwin-Williams "Essentials" and "Fundamentally Neutral" colors, with the garage door matching the house (item 9). Any other exterior color change needs ARC approval (§4.3(e)).
 
 These notices demonstrate why homeowners benefit from independent access to accurate governing document summaries.
 

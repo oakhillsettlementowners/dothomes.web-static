@@ -78,10 +78,11 @@ export const hoaContext = {
         statute: "CC&R §6.5",
         writtenDecision: "20 working days",
         autoApproval: "60 days if no decision",
-        routineMaintenance: "Does NOT require ARC approval",
+        routineMaintenance:
+          "Like-for-like repairs and repainting in the current or a pre-approved color do NOT require ARC approval (CC&R §4.2; 2014 Architectural Standard, items 9-10); other color changes do (§4.3(e))",
       },
       appealRights: {
-        statute: "ORS 94.630, Bylaws §4.15(a)(iii)",
+        statute: "ORS 94.630(1)(n), Bylaws §4.15, CC&R §6.8",
         requirement: "Must be mentioned in all enforcement notices",
         consequence: "Missing appeal rights = procedurally defective notice",
       },
@@ -92,13 +93,13 @@ export const hoaContext = {
     },
     enforcement: {
       canEnforce: [
-        "Specific, objective CC&R requirements only",
+        "The CC&Rs, Bylaws, and rules properly adopted under them",
         "Must follow procedural timelines",
         "Must provide appeal rights",
       ],
       cannotEnforce: [
         "Board preferences or guidelines as CC&Rs",
-        "Fines not authorized by CC&Rs",
+        "Fines without written notice and a hearing, or under a schedule not delivered to each lot (ORS 94.630(1)(n))",
         "Requirements not in governing documents",
         "Hypothetical future concerns",
       ],
@@ -106,11 +107,11 @@ export const hoaContext = {
   },
 
   boardLimitations: [
-    "Cannot invent new fines or penalties",
-    "Cannot withhold appeal rights",
-    "Cannot require ARC approval for routine maintenance",
+    "Cannot fine without written notice and a chance to be heard, or under a fine schedule not delivered to each lot (ORS 94.630(1)(n); CC&R §4.25)",
+    "Cannot fine without a hearing (Bylaws §4.15) or refuse a Board appeal of an ARC decision (CC&R §6.8)",
+    "Cannot require ARC approval for like-for-like repairs, or repainting in the current or a pre-approved color (CC&R §4.2; 2014 Architectural Standard, items 9-10); other color changes do need approval (§4.3(e))",
     "Cannot treat advisory guidelines as mandatory",
-    "Cannot apply rules inconsistently",
+    "Cannot use its discretion arbitrarily or in bad faith (Santoro v. Eagle Crest, 2022); treating similar projects differently can be evidence of that",
     "Cannot enforce based on personal opinions",
   ],
 
