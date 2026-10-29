@@ -87,7 +87,7 @@ export default function PetitionPage() {
             Sign the recall petition and authorize your proxy vote.
             <br />
             <span className="text-primary-600 dark:text-primary-400 font-medium">
-              Only 10% of homeowners needed to initiate a recall vote.
+              59 owners call the meeting. 98 votes remove a director.
             </span>
           </p>
         </div>
@@ -105,15 +105,19 @@ export default function PetitionPage() {
           <ul className="text-sm text-primary-800 dark:text-stone-200 space-y-2 max-w-md mx-auto text-left">
             <li className="flex items-start gap-2">
               <span className="text-primary-600 dark:text-primary-400">•</span>
-              <span>Oregon law (ORS 94.640) gives homeowners the right to recall Board members</span>
+              <span>Oregon law (ORS 94.640(6)) and our Bylaws (§4.6) let homeowners remove Board members</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary-600 dark:text-primary-400">•</span>
-              <span>Only 10% of owners needed to petition for a recall vote</span>
+              <span>Signatures from 30% of owners (59 lots) require the Board to call a special meeting (Bylaws §3.4)</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary-600 dark:text-primary-400">•</span>
-              <span>Recall meetings have no quorum requirement</span>
+              <span>If the Board doesn't send notice within 30 days, a signer can call the meeting (ORS 94.650(3))</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary-600 dark:text-primary-400">•</span>
+              <span>Removal takes 98 of 194 votes, cast in person, by absentee ballot, or by proxy (Bylaws §3.10, §4.6)</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary-600 dark:text-primary-400">•</span>

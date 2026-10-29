@@ -1,5 +1,7 @@
 # Oak Hill Settlement Website Updates
 
+> **Corrected October 2026.** This log describes the November 2024 launch and is kept as history. Two of its claims were wrong and have been fixed on the site: the "2011 federal case" is *Porras v. Vial Fotheringham LLP* (D. Or. 2015), which did not rule that the HOA lacks a fining mechanism, and a recall takes 59 owners to call the meeting and 98 votes to remove a director, not 10% with no quorum. See `docs/ai-context.md` for the current facts.
+
 ## Summary
 
 I've integrated the HOA governance context from `docs/ai-context.md` throughout the website ecosystem, creating a comprehensive homeowner education and empowerment platform.

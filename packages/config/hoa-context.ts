@@ -25,18 +25,25 @@ export const hoaContext = {
   },
 
   criticalHistory: {
-    federalCase2011: {
-      year: 2011,
-      court: "Federal District Court (D. Oregon)",
-      parties: "VF Law (for HOA) vs. Homeowner",
+    porrasCase: {
+      citation: "Porras v. Vial Fotheringham LLP, No. 3:13-cv-00699-BR (D. Or. May 2015)",
+      court: "U.S. District Court, District of Oregon",
+      parties: "Oak Hill homeowner vs. VF Law (Vial Fotheringham)",
+      background:
+        "VF Law sued the homeowner for the HOA in Washington County Circuit Court in December 2010; default judgment in May 2011, with attorney fees cut from $1,281.48 to $750",
       rulings: [
-        "Oak Hill CC&Rs contained NO VALID FINING MECHANISM",
-        "HOA had NO AUTHORITY to assess fines, interest, or penalty charges",
-        "VF Law's collection actions violated Fair Debt Collection Practices Act (FDCPA)",
+        "HOA assessments and the fees and costs VF Law adds to them are 'debts' under the FDCPA",
+        "No evidence in the record that owners were given notice of the 2009 Collection Resolution",
       ],
-      aftermath: "2012 Fine & Enforcement Declaration posted by Board WITHOUT homeowner vote",
+      notRuled: [
+        "Did not rule that Oak Hill's CC&Rs lack a fining mechanism",
+        "Did not find that VF Law violated the FDCPA",
+        "Did not address fines for rule or architectural violations",
+      ],
+      aftermath:
+        "Board adopted the 2012 Collection Resolution and Resolution #2012-001 under Bylaws §4.15(f); fines must be based on a resolution delivered to each lot (ORS 94.630(1)(n))",
       significance:
-        "VF Law continues representing HOA; CC&Rs never amended by membership vote to authorize fines",
+        "VF Law still represents the HOA, and federal debt-collection law applies to what it collects",
     },
   },
 
@@ -61,10 +68,11 @@ export const hoaContext = {
   homeownerRights: {
     ors94Protections: {
       boardRecall: {
-        statute: "ORS 94.640(7)",
-        petitionThreshold: "10% of owners",
-        quorumRequired: false,
-        effect: "Removed director's seat becomes immediately vacant",
+        statute: "ORS 94.640(6); Bylaws §§3.4, 3.6, 4.6",
+        petitionThreshold: "30% of owners (59 lots)",
+        quorumRequired: "20% of votes (39 lots)",
+        removalVote: "Majority of all votes (98 of 194)",
+        effect: "Removed director serves until owners elect a successor",
       },
       arcTimeline: {
         statute: "CC&R §6.5",

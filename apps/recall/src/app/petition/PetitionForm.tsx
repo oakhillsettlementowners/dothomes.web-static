@@ -221,7 +221,7 @@ export default function PetitionForm() {
             className="text-sm text-primary-800 dark:text-stone-200"
           >
             I authorize this proxy vote for the Oak Hill Settlement Board recall election
-            under ORS 94.640(7). <span className="text-red-600">*</span>
+            under ORS 94.640(6) and Bylaws §3.10. <span className="text-red-600">*</span>
           </label>
         </div>
       </fieldset>
