@@ -11,6 +11,9 @@ export default function Footer() {
         <p className="text-xs max-w-none">
           Not affiliated with Oak&nbsp;Hill Settlement HOA Board of Directors or Superior Community Property Management.
         </p>
+        <p className="text-xs max-w-none">
+          General information, not legal advice. For advice about your situation, talk to an attorney.
+        </p>
         <p className="mt-2 max-w-none">
           By homeowners, for homeowners • Forest Grove, Oregon
         </p>
