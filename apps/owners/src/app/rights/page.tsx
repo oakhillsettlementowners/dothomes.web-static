@@ -491,7 +491,7 @@ export default function RightsPage() {
                   🤖 Ask the AI Assistant
                 </h4>
                 <p className="text-primary-800 dark:text-stone-200 text-sm">
-                  Get answers about your rights and Oregon HOA law
+                  Ask about your rights and Oregon HOA law. AI can make mistakes, so check important info.
                 </p>
               </a>
             )}
