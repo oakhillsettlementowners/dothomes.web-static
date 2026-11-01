@@ -108,30 +108,21 @@ export default function RightsPage() {
         {/* Alert Box */}
         <div className="mb-12 bg-primary-600 dark:bg-primary-800 border-l-4 border-primary-800 dark:border-primary-500 rounded-lg p-6 max-w-[64ch] mx-auto">
           <h3 className="text-xl font-bold text-white mb-3">
-            ⚖️ Some history: VF&nbsp;Law and <em>Porras</em>
+            ⚖️ VF&nbsp;Law has been to federal court with an Oak&nbsp;Hill owner
           </h3>
-          <p className="text-primary-50 dark:text-stone-200 ml-0 mb-4 max-w-none">
-            VF&nbsp;Law, the firm the HOA uses today, has been collecting from Oak&nbsp;Hill homeowners since at least 2009, and one of those homeowners took it to federal court (See <em>Porras v. Vial&nbsp;Fotheringham LLP</em>, No. 3:13-cv-00699-BR, D. Or., May 2015):
+          <p className="text-primary-50 dark:text-stone-200 mb-4">
+            In <em>Porras v. Vial&nbsp;Fotheringham LLP</em> (D.&nbsp;Or. 2015), an Oak&nbsp;Hill
+            homeowner sued the HOA's law firm under the Fair Debt Collection Practices&nbsp;Act.
+            The court held that HOA assessments, and the fees and costs VF&nbsp;Law adds to them,
+            are "debts" under that Act, so the federal rules for debt collectors apply when
+            VF&nbsp;Law collects from owners here.
           </p>
-          <ul className="list-disc list-inside text-primary-50 dark:text-stone-200 mb-4 space-y-2 pl-4">
-            <li>In December 2010, VF&nbsp;Law sued an Oak&nbsp;Hill homeowner in Washington&nbsp;County Circuit&nbsp;Court over unpaid assessments. The homeowner didn't respond and lost by default in May 2011, but the court still cut VF&nbsp;Law's requested attorney fees from $1,281.48 to $750.</li>
-            <li>The homeowner then sued VF&nbsp;Law in federal court under the Fair Debt Collection Practices&nbsp;Act (FDCPA).</li>
-            <li>The federal court held that <strong>HOA assessments and the fees and costs VF&nbsp;Law adds to them are "debts" under the FDCPA</strong>, so federal debt-collection rules apply when VF&nbsp;Law collects from Oak&nbsp;Hill owners.</li>
-            <li>The court also noted there was <strong>no evidence homeowners were ever given notice</strong> of the HOA's 2009 Collection Resolution.</li>
-          </ul>
-          <p className="text-primary-50 dark:text-stone-200 ml-0 mb-4 max-w-none">
-            In 2012 the Board adopted a new Collection Resolution and a Rules Enforcement and Fine Structure Resolution (#2012-001). Both are on the <a href="/documents" className="underline">Documents</a> page.
-          </p>
-          <p className="text-primary-50 dark:text-stone-200 ml-0 mb-3 max-w-none">
-            What that means for fines today:
-          </p>
-          <ul className="list-disc list-inside text-primary-50 dark:text-stone-200 mb-4 space-y-2 pl-4">
-            <li>CC&R&nbsp;§4.25 allows fines only after <strong>reasonable notice</strong> and a <strong>reasonable opportunity</strong> for a hearing</li>
-            <li>Under ORS&nbsp;94.630(1)(n), a fine must be based on a schedule or resolution that was <strong>delivered to each lot</strong>. You can ask the HOA to show it was delivered to yours.</li>
-            <li>Owners can overrule a Board rule with 75% of the votes at a properly noticed meeting (Bylaws&nbsp;§4.7(l))</li>
-          </ul>
-          <p className="text-primary-50 dark:text-stone-200 ml-0 font-semibold max-w-none">
-            The court did not rule on whether Oak&nbsp;Hill can fine owners for rule violations. Its lesson is that the HOA and VF&nbsp;Law must follow the rules on notice and procedure, and that federal law applies when they collect.
+          <p className="text-primary-50 dark:text-stone-200">
+            The court also noted there was <strong>no evidence homeowners were ever given
+            notice</strong> of the HOA's 2009 Collection Resolution. The Board adopted new
+            collection and fine resolutions in 2012 (see{" "}
+            <a href="/documents" className="underline">Documents</a>). If a notice relies on
+            one of them, ask for proof it was delivered to your lot.
           </p>
         </div>
 
