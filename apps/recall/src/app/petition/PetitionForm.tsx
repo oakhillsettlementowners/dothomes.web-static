@@ -44,7 +44,7 @@ export default function PetitionForm() {
     }
 
     if (!confirmHomeowner || !authorizeProxy) {
-      setErrorMessage("Please confirm both checkboxes to submit your proxy vote.");
+      setErrorMessage("Please confirm both checkboxes to add your name.");
       setStatus("error");
       return;
     }
@@ -80,17 +80,18 @@ export default function PetitionForm() {
       <div className="bg-primary-100 dark:bg-primary-950/50 border border-primary-300 dark:border-primary-700 rounded-xl p-8 text-center">
         <div className="text-5xl mb-4">✓</div>
         <h3 className="text-2xl font-bold text-primary-900 dark:text-stone-100 mb-2">
-          Thank You!
+          You're on the list
         </h3>
         <p className="text-primary-800 dark:text-stone-200 mb-6">
-          Your proxy vote has been submitted. We'll be in touch as the petition progresses.
+          Thanks. A proxy has to be signed and dated by the owner (Bylaws&nbsp;§3.10), so we'll be
+          in touch with a one-page proxy form before the meeting.
         </p>
         <div className="space-y-3">
           <a
             href="https://owners.oakhillsettlement.homes/rights#stage"
             className="block text-primary-700 dark:text-primary-400 hover:text-primary-900 dark:hover:text-primary-300 underline font-medium"
           >
-            Learn more about your rights →
+            Read the Owner Guide →
           </a>
           <a
             href="https://nextdoor.com/neighborhood/oakhillfg--forest-grove--or/"
@@ -152,7 +153,7 @@ export default function PetitionForm() {
           htmlFor="address"
           className="block text-sm font-semibold text-primary-900 dark:text-stone-100 mb-2"
         >
-          Property Address in Oak Hill Settlement <span className="text-red-600">*</span>
+          Property Address in Oak&nbsp;Hill&nbsp;Settlement <span className="text-red-600">*</span>
         </label>
         <input
           type="text"
@@ -203,7 +204,7 @@ export default function PetitionForm() {
             htmlFor="confirm-homeowner"
             className="text-sm text-primary-800 dark:text-stone-200"
           >
-            I confirm that I am a homeowner in Oak Hill Settlement HOA.{" "}
+            I confirm that I am a homeowner in Oak&nbsp;Hill&nbsp;Settlement HOA.{" "}
             <span className="text-red-600">*</span>
           </label>
         </div>
@@ -220,8 +221,9 @@ export default function PetitionForm() {
             htmlFor="authorize-proxy"
             className="text-sm text-primary-800 dark:text-stone-200"
           >
-            I authorize this proxy vote for the Oak Hill Settlement Board recall election
-            under ORS 94.640(6) and Bylaws §3.10. <span className="text-red-600">*</span>
+            I intend to give my proxy for the Oak&nbsp;Hill&nbsp;Settlement Board recall vote, and I
+            want organizers to contact me with a proxy form to sign and date (Bylaws&nbsp;§3.10;
+            ORS&nbsp;94.660(2)). <span className="text-red-600">*</span>
           </label>
         </div>
       </fieldset>
@@ -257,7 +259,7 @@ export default function PetitionForm() {
             Submitting...
           </span>
         ) : (
-          "Submit Proxy Vote"
+          "Add My Name"
         )}
       </button>
 
@@ -270,7 +272,7 @@ export default function PetitionForm() {
       </p>
       <p className="text-xs text-primary-600 dark:text-stone-400 text-center mt-2">
         By submitting, you agree that your information may be used to verify homeownership
-        and record your proxy vote for the recall petition. Your information will not be
+        and to contact you about the petition and your proxy. Your information will not be
         shared outside of this recall effort.
       </p>
     </form>

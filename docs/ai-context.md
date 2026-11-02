@@ -98,11 +98,11 @@ Notices frequently cite:
 	•	Clauses that do not exist
 	•	Clauses misinterpreted contrary to plain meaning
 
-● Failure to mention appeal rights
+● Sanction notices missing the §4.15(a) elements
 
-Bylaws §4.15(a)(iii) requires that enforcement notices remind homeowners of their right to a hearing and appeal.
+Bylaws §4.15(a) requires a sanction notice to describe the violation, state the proposed sanction, and say the owner has 14 days to request a hearing. ARC decisions are appealed separately, to the Board, in writing within 10 days (CC&R §6.8).
 
-Many notices—including architectural denials and paint compliance notices—omitted this mandatory language, rendering them procedurally defective.
+Many notices—including architectural denials and paint compliance notices—omitted these elements, which is a reason to question them in writing before the deadline runs.
 
 ● ARC timelines not followed
 
@@ -134,7 +134,7 @@ In 2025, a series of “courtesy” paint-related notices were distributed acros
 	•	Misstatements implying ARC approval was required for basic routine maintenance
 	•	Inconsistent descriptions of required work
 	•	Instructions requiring “licensed and insured painters,” which does not appear in any governing document
-	•	No mention of homeowner appeal rights
+	•	No statement of a proposed sanction or of the 14 days to request a hearing (Bylaws §4.15(a))
 	•	No identification of what specific “unsightly condition” allegedly violated §4.20 (the only applicable clause)
 
 Why this matters:
@@ -175,17 +175,18 @@ When these procedural steps are not followed, the resulting enforcement action i
 🏠 7. Why Understanding These Patterns Matters for Homeowners
 
 Many homeowners feel intimidated by HOA notices.
-This guide is meant to empower you.
+This guide is written by homeowners and it isn't legal advice. It's meant to show you where things are in the documents.
 
-You have rights:
-	•	You have the right to timely, accurate, procedurally compliant enforcement
-	•	You have the right to an appeal
-	•	You have the right to be heard
-	•	You have the right to access governing documents
-	•	You have the right to challenge defective notices
-	•	You have the right to organize with neighbors
+What the documents and ORS 94 say owners can do:
+	•	Request a hearing before any fine (CC&R §4.25; Bylaws §4.15)
+	•	Appeal an ARC decision to the Board in writing within 10 days (CC&R §6.8)
+	•	Treat a request as approved after 60 days with no written decision (CC&R §6.5)
+	•	Attend Board meetings (ORS 94.644(1))
+	•	Inspect and copy Association records (ORS 94.670(9); Bylaws §6.4)
+	•	Ask for proof that a fine resolution was delivered to their lot (ORS 94.630(1)(n))
+	•	Call a special meeting with 30% of owners (Bylaws §3.4) and overrule a Board rule with 75% of the votes present at a meeting whose notice listed it (Bylaws §4.7(l))
 
-You also have the right to remove Board members.
+Owners can also remove Board members.
 
 Under ORS 94.640(6), ORS 94.650, and our Bylaws (194 lots, one vote each):
 	•	Owners holding 30% of the votes (59 lots) can require a special meeting (Bylaws §3.4)
@@ -195,7 +196,7 @@ Under ORS 94.640(6), ORS 94.650, and our Bylaws (194 lots, one vote each):
 	•	Removal must be on the meeting notice, and each director gets a chance to be heard and a separate vote (ORS 94.640(6)(b))
 	•	A removed director serves until owners elect a successor (ORS 94.640(6)(c), (7))
 
-This is a check-and-balance that exists precisely to prevent abuse or misunderstanding of HOA authority.
+These numbers come from the Bylaws; Oregon law sets the floors (ORS 94.650(2)(a), 94.655) and lets the Bylaws go higher.
 
 ⸻
 
@@ -204,7 +205,7 @@ This is a check-and-balance that exists precisely to prevent abuse or misunderst
 Oak Hill Settlement has an active Nextdoor community with 1,300+ residents:
 	•	Nextdoor Group: https://nextdoor.com/neighborhood/oakhillfg--forest-grove--or/
 	•	Use for: Community discussion, event organizing, neighbor connections
-	•	Demographics: ~1,344 residents, 95% homeowners
+	•	Size: 194 lots (the 1,344 figure is Nextdoor membership, not a resident count)
 	•	Character: Peaceful, family-friendly neighborhood known for lush greenery
 
 The Nextdoor group is an excellent place for homeowners to:

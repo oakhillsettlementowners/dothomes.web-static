@@ -4,18 +4,6 @@ import { NextRequest, NextResponse } from "next/server";
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || "recall@oakhillsettlement.homes";
 
-// Calculate maximum expiration date (up to 11 months per ORS 94.647)
-function calculateExpirationDate(timestamp: string): string {
-  const submissionDate = new Date(timestamp);
-  const expirationDate = new Date(submissionDate);
-  expirationDate.setMonth(expirationDate.getMonth() + 11);
-  return expirationDate.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
-}
-
 // Format timestamp for display
 function formatTimestamp(timestamp: string): string {
   return new Date(timestamp).toLocaleString('en-US', {
@@ -62,17 +50,17 @@ export async function POST(request: NextRequest) {
     }
 
     if (!confirmHomeowner || !authorizeProxy) {
-      return handleError(request, "Please confirm both checkboxes to submit your proxy authorization.", 400);
+      return handleError(request, "Please confirm both checkboxes to add your name.", 400);
     }
 
     // Log the submission (always)
     const timestamp = new Date().toISOString();
-    console.log(`[PROXY AUTHORIZATION] ${timestamp}`);
+    console.log(`[PETITION SIGNER] ${timestamp}`);
     console.log(`  Name: ${name}`);
     console.log(`  Address: ${address}`);
     console.log(`  Email: ${email}`);
     console.log(`  Homeowner confirmed: ${confirmHomeowner}`);
-    console.log(`  Proxy authorized: ${authorizeProxy}`);
+    console.log(`  Proxy pledged: ${authorizeProxy}`);
     console.log("---");
 
     // Send email notifications if Resend is configured
@@ -108,7 +96,6 @@ async function sendEmailNotification(data: {
   email: string;
   timestamp: string;
 }) {
-  const expirationDate = calculateExpirationDate(data.timestamp);
   const formattedTimestamp = formatTimestamp(data.timestamp);
 
   const response = await fetch("https://api.resend.com/emails", {
@@ -120,28 +107,26 @@ async function sendEmailNotification(data: {
     body: JSON.stringify({
       from: "Oak Hill Recall <petition@recall.oakhillsettlement.homes>",
       to: [NOTIFICATION_EMAIL],
-      subject: `New Proxy Authorization: ${data.name}`,
+      subject: `New petition signer: ${data.name}`,
       text: `
-NEW PROXY AUTHORIZATION - Oak Hill Settlement Board Recall
+NEW PETITION SIGNER - Oak Hill Settlement Board Recall
 
 SUBMISSION DETAILS:
 - Name: ${data.name}
 - Property Address: ${data.address}
 - Email: ${data.email}
 - Submitted: ${formattedTimestamp}
-- Scope: Board recall election ONLY
-
-NOTE: This is a proxy authorization appointing recall organizers to vote on the homeowner's behalf at the recall election. This is not a ballot - the actual vote will be cast at the election meeting.
+- Scope: Board recall ONLY
 
 CONFIRMATIONS:
 ✓ Confirmed homeowner in Oak Hill Settlement
-✓ Authorized proxy designation for recall election
+✓ Pledged a proxy for the recall vote
 
-LEGAL NOTICE (ORS 94.647):
-This proxy authorization remains valid for up to eleven (11) months from the date of submission (${expirationDate}), unless revoked earlier.
+NEXT STEP:
+This is a pledge, not a proxy. A proxy must be dated and signed by the owner (Bylaws §3.10; ORS 94.660(2)). Bring this owner a proxy form to sign before the meeting.
 
-REVOCATION:
-Homeowner may revoke by emailing recall@oakhillsettlement.homes
+WITHDRAWAL:
+Owner may withdraw by emailing recall@oakhillsettlement.homes
 
 ---
 This is an automated notification from the recall petition form.
@@ -163,7 +148,6 @@ async function sendHomeownerConfirmation(data: {
   email: string;
   timestamp: string;
 }) {
-  const expirationDate = calculateExpirationDate(data.timestamp);
   const formattedTimestamp = formatTimestamp(data.timestamp);
 
   const response = await fetch("https://api.resend.com/emails", {
@@ -176,27 +160,25 @@ async function sendHomeownerConfirmation(data: {
       from: "Oak Hill Recall <petition@recall.oakhillsettlement.homes>",
       to: [data.email],
       reply_to: "recall@oakhillsettlement.homes",
-      subject: "Proxy Authorization Confirmation - Oak Hill Settlement Recall",
+      subject: "You're on the list - Oak Hill Settlement Recall",
       text: `
-PROXY AUTHORIZATION CONFIRMATION - Oak Hill Settlement Recall
+YOU'RE ON THE LIST - Oak Hill Settlement Recall
 
 Dear ${data.name},
 
-This confirms your proxy authorization for the Oak Hill Settlement Board recall election.
+Thanks for adding your name to the petition to call a recall meeting, and for pledging your proxy for the vote.
 
-NOTE: This is a proxy authorization appointing recall organizers to vote on your behalf at the recall election. This is not a ballot - the actual vote will be cast at the election meeting.
+WHAT HAPPENS NEXT:
+A proxy has to be dated and signed by the owner (Bylaws §3.10; ORS 94.660(2)), so this form by itself isn't one. Before the meeting, organizers will bring you a one-page proxy form to sign. A signed proxy lasts one year from its date unless it says otherwise, and you can revoke it by giving notice to the person presiding at the meeting.
 
 SUBMISSION DETAILS:
 - Name: ${data.name}
 - Property Address: ${data.address}
 - Submitted: ${formattedTimestamp}
-- Scope: Board recall election ONLY
+- Scope: Board recall ONLY
 
-LEGAL NOTICE (ORS 94.647):
-This proxy authorization remains valid for up to eleven (11) months from the date of submission (${expirationDate}), unless revoked earlier.
-
-TO REVOKE THIS PROXY:
-Email recall@oakhillsettlement.homes at any time to revoke your proxy authorization.
+TO WITHDRAW:
+Email recall@oakhillsettlement.homes at any time and we'll remove your name.
 
 ---
 Oak Hill Settlement Homeowner Recall Effort
@@ -217,7 +199,7 @@ function handleSuccess(request: NextRequest) {
   const acceptsJson = request.headers.get("accept")?.includes("application/json");
   
   if (acceptsJson) {
-    return NextResponse.json({ success: true, message: "Proxy authorization submitted successfully." });
+    return NextResponse.json({ success: true, message: "You're on the list." });
   }
   
   // Redirect to success page for non-JS form submissions

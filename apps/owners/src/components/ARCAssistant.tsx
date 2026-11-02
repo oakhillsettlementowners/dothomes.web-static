@@ -75,7 +75,7 @@ export default function ARCAssistant() {
         ⏱️ ARC Timeline Assistant
       </h3>
       <p className="text-primary-800 dark:text-stone-200 mb-6 text-sm">
-        Track your Architectural Review Committee submission timeline based on CC&R §6.5
+        Track your Architectural Review&nbsp;Committee submission timeline based on CC&R&nbsp;§6.5
       </p>
 
       {/* Date Picker */}
@@ -144,7 +144,7 @@ export default function ARCAssistant() {
                 </h4>
                 <p className="text-sm text-primary-800 dark:text-stone-200 mb-2">
                   If no written decision by this date, your request is{' '}
-                  <strong>automatically approved</strong> (CC&R §6.5)
+                  <strong>automatically approved</strong> (CC&R&nbsp;§6.5)
                 </p>
                 <p className="text-lg font-semibold text-primary-900 dark:text-primary-400">
                   {formatDate(dates.sixtyDays)}
@@ -178,8 +178,8 @@ export default function ARCAssistant() {
               <li>• Working days exclude weekends</li>
               <li>
                 • Repairs, and repainting in your current color or a pre-approved color, do NOT
-                require ARC approval (CC&R §4.2; 2014 Architectural Standard). Other color
-                changes do (CC&R §4.3(e)).
+                require ARC approval (CC&R&nbsp;§4.2; 2014 Architectural Standard). Other color
+                changes do (CC&R&nbsp;§4.3(e)).
               </li>
             </ul>
           </div>

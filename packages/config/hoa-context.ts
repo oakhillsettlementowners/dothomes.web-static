@@ -18,8 +18,8 @@ export const hoaContext = {
     hierarchy: [
       "CC&Rs Declaration (highest authority)",
       "Bylaws",
-      "Board-created Declarations/Resolutions (only if authorized by CC&Rs and ORS 94)",
-      "Architectural Standards (guidelines, not necessarily binding)",
+      "Board resolutions and rules (only where the CC&Rs, Bylaws or ORS 94 authorize them)",
+      "Architectural Standards (adopted by the ARC under CC&R §6.4 to interpret the CC&Rs; they can't add requirements the CC&Rs don't contain)",
     ],
     legalRepresentation: "VF Law",
   },
@@ -50,7 +50,7 @@ export const hoaContext = {
   documentedPatterns: {
     proceduralDefects: [
       "Missing or incorrect CC&R citations",
-      "Failure to mention mandatory appeal rights (Bylaws §4.15(a)(iii))",
+      "Sanction notices that don't state the proposed sanction or the 14 days to request a hearing (Bylaws §4.15(a))",
       "ARC decisions outside required 20-day timeline (CC&R §6.5)",
       "Ignoring 60-day auto-approval rule",
       "Inaccurate property condition descriptions",
@@ -61,7 +61,7 @@ export const hoaContext = {
       "No CC&R citations provided",
       "False claim ARC approval needed for routine maintenance",
       "Required 'licensed and insured painters' (not in governing documents)",
-      "No appeal rights mentioned",
+      "No statement of a proposed sanction or of the 14 days to request a hearing (Bylaws §4.15(a))",
     ],
   },
 
@@ -83,19 +83,19 @@ export const hoaContext = {
       },
       appealRights: {
         statute: "ORS 94.630(1)(n), Bylaws §4.15, CC&R §6.8",
-        requirement: "Must be mentioned in all enforcement notices",
-        consequence: "Missing appeal rights = procedurally defective notice",
+        requirement: "Sanction notices must state the proposed sanction and the 14 days to request a hearing (Bylaws §4.15(a)); ARC decisions are appealed to the Board in writing within 10 days (CC&R §6.8)",
+        consequence: "A notice that skips §4.15(a) can be questioned in writing before its deadline runs",
       },
       meetings: {
-        statute: "ORS 94.640",
-        rights: ["Attend board meetings", "Properly noticed meetings", "Proper voting for special assessments"],
+        statute: "ORS 94.640, 94.644(1)",
+        rights: ["Attend board meetings (ORS 94.644(1))", "Properly noticed meetings", "Proper voting for special assessments"],
       },
     },
     enforcement: {
       canEnforce: [
         "The CC&Rs, Bylaws, and rules properly adopted under them",
         "Must follow procedural timelines",
-        "Must provide appeal rights",
+        "Must give the §4.15(a) notice before any sanction",
       ],
       cannotEnforce: [
         "Board preferences or guidelines as CC&Rs",
